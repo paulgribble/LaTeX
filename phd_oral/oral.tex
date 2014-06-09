@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1.0in]{geometry}
+\usepackage{enumitem}
+
+% ---------- CHOOSE A FONT ----------
+%
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+
+%\usepackage{fouriernc}                     % New Century Schoolbook
+
+%\usepackage{charter}                        % Charter
+
+%\usepackage[urw-garamond]{mathdesign}      % Garamond
+% or
+%\usepackage{fbb}
+
+%\usepackage{helvet}                        % Helvetica
+%\renewcommand*\familydefault{\sfdefault}
+
+\usepackage{palatino,mathpazo}             % Palatino
+\RequirePackage[scaled=0.92]{helvet}
+\RequirePackage[scaled=1.02]{inconsolata}
+\linespread{1.05}
+
+%\usepackage{libertine}                      % Libertine
+
+% (or leave all commented out for LaTeX default, Computer Modern)
+\usepackage[T1]{fontenc}
+% -----------------------------------
+
+% ------- CUSTOM TITLE FORMAT -------
+%
+\makeatletter
+\renewcommand{\maketitle}{
+\begin{flushleft}          % right align
+{\large\textbf\@title}     % increase the font size of the title
+\vspace{1em}\\             % vertical space between the title and author name
+{\normalsize\@author}      % author name
+\\\@date                   % date
+\vspace{1em}               % vertical space after author
+\end{flushleft}
+}
+% -----------------------------------
+
+\usepackage{mathtools}               % mathtools and amsmath
+
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{2ex}{1ex}
+\titleformat*{\section}{\large\bfseries}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0cm}
+
+\title{Ford Prefect Ph.D. Oral}
+\author{John Smith, examiner}
+\date{April 17, 2014}
+
+%\usepackage{showframe}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\section*{Chapter 1}
+
+\begin{enumerate}[leftmargin=*,itemsep=0ex]
+
+\item xxx
+
+\item xxx
+
+\item xxx
+
+\end{enumerate}
+
+\section*{Chapter 2}
+
+\begin{enumerate}[leftmargin=*,itemsep=0ex]
+
+\item xxx
+
+\item xxx
+
+\item xxx
+
+\end{enumerate}
+
+
+\end{document}

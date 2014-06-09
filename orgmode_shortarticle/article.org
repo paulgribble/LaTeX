@@ -1,0 +1,12 @@
+#+STARTUP: showall
+#+TITLE: My Article
+#+AUTHOR: Ford Prefect
+#+EMAIL: ford@42.net
+#+DATE: \today
+#+SETUPFILE: preamble.org
+
+* Introduction
+
+Hello, I must be going.
+
+<CTRL-c> <CTRL-e> to export to various formats

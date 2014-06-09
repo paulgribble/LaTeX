@@ -1,0 +1,15 @@
+#+OPTIONS: toc:nil num:nil email:nil
+#+LATEX_CLASS_OPTIONS: [12pt,letterpaper]
+#+LATEX_HEADER: \usepackage[protrusion=true,expansion=true]{microtype}
+#+LATEX_HEADER: \usepackage[T1]{fontenc}
+#+LATEX_HEADER: \usepackage{mathpazo}\linespread{1.05}
+#+LATEX_HEADER: \usepackage[margin=1.0in]{geometry}
+#+LATEX_HEADER: \setlength{\parskip}{2ex}
+#+LATEX_HEADER: \setlength{\parindent}{0mm}
+#+LATEX_HEADER: \usepackage[compact]{titlesec}
+#+LATEX_HEADER: \titlespacing{\section}{0pt}{1ex}{0ex}
+#+LATEX_HEADER: \titleformat*{\section}{\normalsize\bfseries}
+#+LATEX_HEADER: \titlespacing{\subsection}{0pt}{0ex}{0ex}
+#+LATEX_HEADER: \titleformat*{\subsection}{\normalsize}
+#+LATEX_HEADER: \makeatletter \renewcommand{\maketitle}{\begin{flushleft} {\large\textbf{\@title}}\\{\normalsize\@author}\\{\small\@date}\end{flushleft}}
+#+LATEX_HEADER: \usepackage{lipsum}

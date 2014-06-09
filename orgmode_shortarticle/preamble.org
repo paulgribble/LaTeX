@@ -1,0 +1,12 @@
+#+OPTIONS: toc:nil num:nil email:nil
+#+LATEX_CLASS_OPTIONS: [11pt, letterpaper]
+#+LATEX_HEADER: \usepackage[protrusion=true,expansion=true]{microtype}
+#+LATEX_HEADER: \usepackage[T1]{fontenc}
+#+LATEX_HEADER: \usepackage{mathpazo}\linespread{1.05}
+#+LATEX_HEADER: \usepackage{hyperref} \urlstyle{sf}
+#+LATEX_HEADER: \usepackage[letterpaper]{geometry}
+#+LATEX_HEADER: \usepackage[labelfont=bf]{caption}
+#+LATEX_HEADER: \setlength{\skip\footins}{10mm}
+#+LATEX_HEADER: \setlength{\parskip}{1ex}
+#+LATEX_HEADER: \usepackage{mathtools}
+#+LATEX_HEADER: \makeatletter \renewcommand{\maketitle}{ \begin{flushleft} {\LARGE\@title} \vspace{20pt}\\ {\large\@author} \\\@date \vspace{20pt} \end{flushleft}}

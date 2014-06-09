@@ -1,0 +1,69 @@
+\documentclass[letterpaper,11pt]{article}
+
+% ---------- CHOOSE A FONT ----------
+%
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+
+%\usepackage{fouriernc}                     % New Century Schoolbook
+
+%\usepackage{charter}                        % Charter
+
+%\usepackage[urw-garamond]{mathdesign}      % Garamond
+% or
+%\usepackage{fbb}
+
+%\usepackage{helvet}                        % Helvetica
+%\renewcommand*\familydefault{\sfdefault}
+
+\usepackage{palatino,mathpazo}             % Palatino
+\RequirePackage[scaled=0.92]{helvet}
+\RequirePackage[scaled=1.02]{inconsolata}
+\linespread{1.05}
+
+%\usepackage{libertine}                      % Libertine
+
+% (or leave all commented out for LaTeX default, Computer Modern)
+\usepackage[T1]{fontenc}
+% -----------------------------------
+
+% --------- MISC FORMATTING ---------
+%
+\usepackage{natbib}                  % for our chosen bibliography style
+\usepackage{graphicx}                % for importing graphics into figures
+\usepackage{float}                   % better control of figure placement
+\usepackage{amsmath}                 % better mathematical typesetting
+\usepackage{hyperref}                % for clickable URLs and email addresses
+\urlstyle{sf}                        % san-serif font for URLs
+\usepackage[margin=1.0in]{geometry}  % control page margins
+\usepackage[labelfont=bf]{caption}   % make caption labels boldface
+\setlength{\skip\footins}{10mm}      % obsessing about footnote spacing
+\setlength{\parskip}{1ex}            % space between paragraphs
+\usepackage{mathtools}               % mathtools and amsmath
+% -----------------------------------
+
+$if(title)$
+\title{$title$}
+$endif$
+$if(subtitle)$
+\subtitle{$subtitle$}
+$endif$
+\author{$for(author)$$author$$sep$ \and $endfor$}
+\date{$date$}
+
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+
+$if(title)$
+\begin{flushleft}          % right align
+{\LARGE {$title$}}            % increase the font size of the title
+\vspace{20pt}\\            % vertical space between the title and author name
+{\large {$for(author)$$author$$sep$, $endfor$}}           % author name
+\\\$date$                   % date
+\vspace{20pt}              % vertical space between the author block and abstract
+\end{flushleft}
+$endif$
+
+$body$
+
+\end{document}
