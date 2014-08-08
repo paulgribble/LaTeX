@@ -1,0 +1,77 @@
+\documentclass[11pt]{article}
+
+\usepackage[top=1.0in, left=1.0in, right=1.0in, bottom=1.25in, includefoot]{geometry}
+\setlength{\parskip}{1.5ex}
+\setlength{\parindent}{0pt}
+
+% FONT
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage[T1]{fontenc}
+\usepackage{palatino,mathpazo}             % Palatino
+\RequirePackage[scaled=0.92]{helvet}
+\RequirePackage[scaled=1.02]{inconsolata}
+\linespread{1.05}
+
+\usepackage{mathtools}               % mathtools and amsmath
+
+\usepackage{graphicx}
+\usepackage{ifthen}
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{46pt}
+
+% logo on page or else nothing
+\fancyhead{}
+\fancyhead[L]{\ifthenelse{\value{page}=1}
+  {\hspace{-.57in}\includegraphics[width=1.71in]{BrainMindInst_RGB.pdf}\vspace{0pt}}
+  { } }
+\renewcommand{\headrulewidth}{0.0pt}
+
+\fancyfoot{}
+\fancyfoot[L]{\ifthenelse{\value{page}=1}
+  {\footnotesize\selectfont\sffamily \textbf{Brain and Mind Institute, Western University}, Natural
+    Sciences Centre, Rm. 120\\1151 Richmond St. N., London, ON, Canada N6A 5B7
+    | t. 519.661.2111 ext. 86057 | {\color{uwopurple}\href{http://www.uwo.ca/bmi}{www.uwo.ca/bmi}}}
+  {\thepage} }
+\renewcommand{\footrulewidth}{0.0pt}
+
+\usepackage{color}
+\definecolor{uwopurple}{rgb}{0.263,0.161,0.420}
+
+\usepackage{hyperref}
+
+%\usepackage{showframe}
+
+\begin{document}
+
+\thispagestyle{fancy}
+
+\today
+\vspace{2.0ex}
+
+Mr. Smith\\  				% CHANGE TO:
+University of Something
+
+\vspace{2.5ex}
+
+\textbf{Re: something}		% CHANGE RE:
+\vspace{1.5ex}
+
+Dear xxx,					% CHANGE Dear:
+
+xxx							% CHANGE letter content
+
+\vspace{2.0ex}
+Sincerely,
+\vspace{2.0ex}
+
+\includegraphics[width=4.0cm]{signature.pdf}\vspace{1.0ex}\\
+%\vspace{2cm}                                                                  
+\textbf{Paul L. Gribble, Ph.D.}\\
+Professor\\
+Dept. Psychology\\
+Dept. Physiology \& Pharmacology\\
+Western University Canada\\
+{\color{uwopurple}paul@gribblelab.org | \href{http://www.gribblelab.org}{www.gribblelab.org}}
+
+\end{document}
