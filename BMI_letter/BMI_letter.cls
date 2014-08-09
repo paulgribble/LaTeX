@@ -15,8 +15,7 @@
 % font
 \RequirePackage[protrusion=true,expansion=true]{microtype} % Better typography
 \RequirePackage[T1]{fontenc}
-\RequirePackage{helvet}                        % Helvetica
-\renewcommand*\familydefault{\sfdefault}
+\usepackage[bitstream-charter]{mathdesign} % Charter BT
 
 \RequirePackage{graphicx}
 \RequirePackage{ifthen}
