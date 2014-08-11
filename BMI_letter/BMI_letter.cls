@@ -69,7 +69,7 @@
 
 \newcommand{\closingsig}[1]{
 	\vspace{2.0ex}
-	Sincerely,
+	#1
 	\vspace{2.0ex}
 
 	\includegraphics[width=4.0cm]{signature.pdf}\vspace{0.0ex}\\
@@ -84,7 +84,7 @@
 
 \newcommand{\closingnosig}[1]{
 	\vspace{2.0ex}
-	Sincerely,
+	#1
 	\vspace{25mm}
 
 	\textbf{Paul L. Gribble, Ph.D.}\\
