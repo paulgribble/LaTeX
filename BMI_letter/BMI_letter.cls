@@ -15,9 +15,10 @@
 % font
 \RequirePackage[protrusion=true,expansion=true]{microtype} % Better typography
 \RequirePackage[T1]{fontenc}
+\RequirePackage{palatino,mathpazo}             % Palatino
 \RequirePackage[scaled=0.92]{helvet}
 \RequirePackage[scaled=1.02]{inconsolata}
-\RequirePackage[bitstream-charter]{mathdesign} % Charter BT
+\linespread{1.05}
 
 \RequirePackage{graphicx}
 \RequirePackage{ifthen}
