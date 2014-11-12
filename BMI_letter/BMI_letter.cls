@@ -15,10 +15,10 @@
 % font
 \RequirePackage[protrusion=true,expansion=true]{microtype} % Better typography
 \RequirePackage[T1]{fontenc}
-\RequirePackage{palatino,mathpazo}             % Palatino
+%\RequirePackage{palatino,mathpazo}             % Palatino
+%\linespread{1.05}
 \RequirePackage[scaled=0.92]{helvet}
 \RequirePackage[scaled=1.02]{inconsolata}
-\linespread{1.05}
 
 \RequirePackage{graphicx}
 \RequirePackage{ifthen}
@@ -69,6 +69,8 @@
 \newcommand{\greeting}[1]{
 	#1
 }
+
+\raggedright
 
 \newcommand{\closingsig}[1]{
 	\vspace{2.0ex}
