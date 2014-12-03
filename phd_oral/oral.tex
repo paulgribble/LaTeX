@@ -3,31 +3,9 @@
 \usepackage[margin=1.0in]{geometry}
 \usepackage{enumitem}
 
-% ---------- CHOOSE A FONT ----------
-%
-\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
-
-%\usepackage{fouriernc}                     % New Century Schoolbook
-
-%\usepackage{charter}                        % Charter
-
-%\usepackage[urw-garamond]{mathdesign}      % Garamond
-% or
-%\usepackage{fbb}
-
-%\usepackage{helvet}                        % Helvetica
-%\renewcommand*\familydefault{\sfdefault}
-
-\usepackage{palatino,mathpazo}             % Palatino
-\RequirePackage[scaled=0.92]{helvet}
-\RequirePackage[scaled=1.02]{inconsolata}
-\linespread{1.05}
-
-%\usepackage{libertine}                      % Libertine
-
-% (or leave all commented out for LaTeX default, Computer Modern)
+% Fonts
+\usepackage[protrusion=true,expansion=true]{microtype}
 \usepackage[T1]{fontenc}
-% -----------------------------------
 
 % ------- CUSTOM TITLE FORMAT -------
 %
@@ -43,10 +21,10 @@
 }
 % -----------------------------------
 
-\usepackage{mathtools}               % mathtools and amsmath
+\usepackage{mathtools}     % mathtools and amsmath
 
 \usepackage[compact]{titlesec}
-\titlespacing{\section}{0pt}{2ex}{1ex}
+\titlespacing{\section}{0pt}{2ex}{2ex}
 \titleformat*{\section}{\large\bfseries}
 
 \setlength{\parindent}{0em}
@@ -56,7 +34,6 @@
 \author{John Smith, examiner}
 \date{April 17, 2014}
 
-%\usepackage{showframe}
 
 \begin{document}
 \maketitle
