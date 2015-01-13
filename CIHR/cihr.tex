@@ -1,14 +1,19 @@
 \documentclass[12pt]{article}
 
 \usepackage[letterpaper, margin=0.75in, includeheadfoot, centering,
-headsep=1ex, footskip=3ex, headheight=15pt]{geometry}
+headsep=1.5ex, headheight=15pt]{geometry}
+\usepackage{multicol}
+
+\linespread{1.0}
+\setlength{\parskip}{0.5ex}
+%\setlength{\parindent}{0in}
 
 \usepackage[protrusion=true,expansion=true]{microtype}
 \usepackage[T1]{fontenc}
-\usepackage{times}
+\usepackage[bitstream-charter]{mathdesign} % Charter BT
 
 \usepackage[compact]{titlesec}
-\titlespacing*{\section}{0pt}{*0}{0.5ex}
+\titlespacing*{\section}{0pt}{*0}{*0}
 \titleformat*{\section}{\large\bfseries}
 \titlespacing*{\subsection}{0pt}{*0}{*0}
 \titlespacing*{\subsubsection}{0pt}{*0}{*0}
@@ -22,33 +27,35 @@ headsep=1ex, footskip=3ex, headheight=15pt]{geometry}
 \rhead{Paul L. Gribble}
 \cfoot{\thepage}
 
-\usepackage[compress,numbers]{natbib}
-
 \usepackage{graphicx}
-\usepackage[labelfont=bf,skip=3ex]{caption}
+\usepackage[labelfont=bf, skip=3ex, width=0.9\textwidth]{caption}
 
-\linespread{1.0}
-
-\usepackage{multicol}
+\usepackage{citecollapse}
+\let\oldthebibliography=\thebibliography
+\let\endoldthebibliography=\endthebibliography
+\renewenvironment{thebibliography}[1]{%
+  \begin{oldthebibliography}{#1}%
+    \setlength{\parskip}{0ex}%
+    \setlength{\itemsep}{0.75ex}%
+}%
+{%
+  \end{oldthebibliography}%
+}
 
 \usepackage{lipsum}
 
 \begin{document}
 
-\section*{Summary}
-
-As in \cite{mattar2005motor} and in \cite{hodgkin1952propagation},
-and as seen in Figure~\ref{fig:robot}, \lipsum[1]
-
 \begin{multicols}{2}
   
-  \section*{Introduction}
-  
-  \lipsum[1-5]
+\section*{Introduction}
 
-  \section*{General Methods}
+As in \cite{mattar2005motor} and in \cite{hodgkin1952propagation},
+and as seen in Figure~\ref{fig:robot}, \lipsum[1-5]
 
-  \lipsum[1-5]
+\section*{General Methods}
+
+\lipsum[1-5]
   
 \end{multicols}
 
@@ -85,8 +92,6 @@ and as seen in Figure~\ref{fig:robot}, \lipsum[1]
 %        \caption{\textbf{Caption Title}. Caption goes here.}
 % \label{}
 %\end{figure}
-
-
 
 
 \end{document}
