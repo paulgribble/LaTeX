@@ -1,11 +1,12 @@
-\documentclass[12pt]{article}
+\documentclass[twocolumn,11pt,letterpaper]{article}
 
-\usepackage[letterpaper, margin=0.75in, includeheadfoot, centering,
-headsep=1.5ex, headheight=15pt]{geometry}
+\usepackage[top=0.75in, bottom=0.75in, left=0.75in, right=0.75in,
+  includeheadfoot, centering, letterpaper]{geometry}
 
-\linespread{1.0}
-\setlength{\parskip}{0.5ex}
-%\setlength{\parindent}{0in}
+\linespread{0.95}
+\setlength{\headheight}{30.76991pt}
+\setlength{\footskip}{22pt}
+\setlength{\headsep}{11pt}
 
 \usepackage[protrusion=true,expansion=true]{microtype}
 \usepackage[T1]{fontenc}
@@ -13,23 +14,22 @@ headsep=1.5ex, headheight=15pt]{geometry}
 
 \usepackage[compact]{titlesec}
 \titlespacing*{\section}{0pt}{*0}{*0}
-\titleformat*{\section}{\large\bfseries}
+\titleformat*{\section}{\centering\large\bfseries}
 \titlespacing*{\subsection}{0pt}{*0}{*0}
 \titlespacing*{\subsubsection}{0pt}{*0}{*0}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhead{}
-\fancyfoot{}
-\chead{}
-\lhead{Grant Title Goes Here}
-\rhead{John. H. Smith}
-\cfoot{\thepage}
+\chead{\textbf{Research Proposal}\\Title Of Proposal Goes Here}
+\lhead{Lastname, Firstname I.\\}
+\rhead{Amount requested: \$xxx,xxx\\}
+\cfoot{Research Proposal Page \thepage}
 
 \usepackage{graphicx}
 \usepackage[labelfont=bf, skip=3ex, width=0.9\textwidth]{caption}
 
 \usepackage{citecollapse}
+
 \let\oldthebibliography=\thebibliography
 \let\endoldthebibliography=\endthebibliography
 \renewenvironment{thebibliography}[1]{%
@@ -48,13 +48,18 @@ headsep=1.5ex, headheight=15pt]{geometry}
 \section*{Introduction}
 
 As in \cite{mattar2005motor} and in \cite{hodgkin1952propagation},
-and as seen in Figure~\ref{fig:robot}, \lipsum[1-5]
+and as seen in Figure~\ref{fig:robot}, \lipsum[1-7]
 
 \section*{General Methods}
 
-\lipsum[1-5]
+\lipsum[1-6]
+
+\section*{Conclusion}
+
+\lipsum[1]
 
 \newpage
+\onecolumn
 \bibliography{refs}
 \bibliographystyle{ieeetr}
 
