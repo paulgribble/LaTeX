@@ -19,6 +19,7 @@
 %\linespread{1.05}
 \RequirePackage[scaled=0.92]{helvet}
 \RequirePackage[scaled=1.02]{inconsolata}
+\usepackage[bitstream-charter]{mathdesign} % Charter BT
 
 \RequirePackage{graphicx}
 \RequirePackage{ifthen}
