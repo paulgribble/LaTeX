@@ -1,0 +1,61 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage[top=1.80cm,left=1.90cm,right=1.90cm,bottom=1.7cm,includeheadfoot]{geometry}
+
+\setlength{\headheight}{27.52466pt}
+\setlength{\footskip}{22pt}
+\setlength{\headsep}{8pt}
+%\setlength{\parskip}{0.5ex}
+
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage[T1]{fontenc}
+
+%\usepackage[bitstream-charter]{mathdesign} % Charter BT
+
+\usepackage{times}                        % Times New Roman
+
+%\usepackage{palatino,mathpazo}            % Palatino
+\RequirePackage[scaled=0.92]{helvet}
+%\RequirePackage[scaled=1.02]{inconsolata}
+%\linespread{1.05}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\chead{\textbf{\sffamily Summary of Progress}\\
+\sffamily Title of the Grant Goes Here}
+\lhead{\sffamily Lastname, Firstname I.\\}
+\rhead{\sffamily Amount requested: \$xxx,xxx\\}
+\cfoot{\small\sffamily Summary of Progress Page \thepage}
+\renewcommand{\headrulewidth}{0.4pt}% default is 0pt
+\renewcommand{\footrulewidth}{0.4pt}% default is 0pt
+
+\usepackage{graphicx}
+\usepackage[labelfont=bf,skip=3ex,width=0.9\textwidth]{caption}
+
+\usepackage{citecollapse}
+\usepackage[nospace]{cite}
+
+\let\oldthebibliography=\thebibliography
+\let\endoldthebibliography=\endthebibliography
+\renewenvironment{thebibliography}[1]{%
+  \begin{oldthebibliography}{#1}%
+    \setlength{\parskip}{0ex}%
+    \setlength{\itemsep}{0.25ex}%
+}%
+{%
+  \end{oldthebibliography}%
+}
+
+\usepackage[compact]{titlesec}
+\titlespacing*{\section}{0pt}{0.75ex}{0.25ex}
+\titleformat*{\section}{\normalsize\bfseries\sffamily}
+\titlespacing*{\subsection}{0pt}{1.0ex}{0pt}
+
+\usepackage{lipsum}
+
+\begin{document}
+
+\noindent\lipsum[1-6]
+
+
+\end{document}
