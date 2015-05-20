@@ -3,7 +3,7 @@
 #+LATEX_HEADER: \usepackage[protrusion=true,expansion=true]{microtype}
 #+LATEX_HEADER: \usepackage[T1]{fontenc}
 #+LATEX_HEADER: \usepackage{mathpazo}\linespread{1.05}
-#+LATEX_HEADER: \usepackage[margin=1.0in]{geometry}
+#+LATEX_HEADER: \usepackage[margin=1.2in]{geometry}
 #+LATEX_HEADER: \setlength{\parskip}{2ex}
 #+LATEX_HEADER: \setlength{\parindent}{0mm}
 #+LATEX_HEADER: \usepackage[compact]{titlesec}
