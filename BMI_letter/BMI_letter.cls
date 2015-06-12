@@ -5,7 +5,7 @@
 % 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{BMI_letter}[2014/08/08 v0.01 Brain and Mind letterhead]
-\LoadClass[11pt,letterpaper]{article}
+\LoadClass[12pt,letterpaper]{article}
 
 % page margins and paragraph spacing
 \RequirePackage[top=1.0in, left=1.0in, right=1.0in, bottom=1.25in, includefoot]{geometry}
@@ -15,11 +15,11 @@
 % font
 \RequirePackage[protrusion=true,expansion=true]{microtype} % Better typography
 \RequirePackage[T1]{fontenc}
-%\RequirePackage{palatino,mathpazo}             % Palatino
-%\linespread{1.05}
+\RequirePackage{palatino,mathpazo}             % Palatino
+\linespread{1.05}
 \RequirePackage[scaled=0.92]{helvet}
 \RequirePackage[scaled=1.02]{inconsolata}
-\usepackage[bitstream-charter]{mathdesign} % Charter BT
+%\usepackage[bitstream-charter]{mathdesign} % Charter BT
 
 \RequirePackage{graphicx}
 \RequirePackage{ifthen}
