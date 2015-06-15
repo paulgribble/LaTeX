@@ -1,4 +1,4 @@
-#+OPTIONS: toc:nil num:nil email:nil
+#+OPTIONS: toc:nil num:nil email:nil ':t
 #+LATEX_CLASS_OPTIONS: [11pt, letterpaper]
 #+LATEX_HEADER: \usepackage[protrusion=true,expansion=true]{microtype}
 #+LATEX_HEADER: \usepackage[T1]{fontenc}
