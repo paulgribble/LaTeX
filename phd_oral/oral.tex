@@ -1,11 +1,13 @@
-\documentclass[12pt]{article}
+\documentclass[12pt,letterpaper]{article}
 
-\usepackage[margin=1.0in]{geometry}
+\usepackage[margin=1.2in]{geometry}
 \usepackage{enumitem}
 
 % Fonts
 \usepackage[protrusion=true,expansion=true]{microtype}
 \usepackage[T1]{fontenc}
+\usepackage{palatino,mathpazo}
+\linespread{1.05}
 
 % ------- CUSTOM TITLE FORMAT -------
 %
@@ -23,12 +25,17 @@
 
 \usepackage{mathtools}     % mathtools and amsmath
 
-\usepackage[compact]{titlesec}
-\titlespacing{\section}{0pt}{2ex}{2ex}
-\titleformat*{\section}{\large\bfseries}
-
 \setlength{\parindent}{0em}
 \setlength{\parskip}{0cm}
+
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{1ex}{2ex}
+\titleformat*{\section}{\large\bfseries}
+\titlespacing{\subsection}{0pt}{0ex}{0ex}
+\titleformat*{\subsection}{\normalsize}
+
+\setlist[itemize]{leftmargin=*}
+\setlist[enumerate]{leftmargin=*}
 
 \title{Ford Prefect Ph.D. Oral}
 \author{John Smith, examiner}
@@ -65,3 +72,8 @@
 
 
 \end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
