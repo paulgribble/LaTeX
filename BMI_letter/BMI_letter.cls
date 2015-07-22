@@ -13,19 +13,19 @@
 \setlength{\parindent}{0pt}
 
 % font
-\RequirePackage[protrusion=true,expansion=true]{microtype} % Better typography
+%\RequirePackage[protrusion=true,expansion=true]{microtype} % Better typography
 \RequirePackage[T1]{fontenc}
 \RequirePackage{palatino,mathpazo}             % Palatino
 \linespread{1.05}
 \RequirePackage[scaled=0.92]{helvet}
-\RequirePackage[scaled=1.02]{inconsolata}
+%\RequirePackage[scaled=1.02]{inconsolata}
 %\usepackage[bitstream-charter]{mathdesign} % Charter BT
 
 \RequirePackage{graphicx}
 \RequirePackage{ifthen}
 
 \RequirePackage{fancyhdr}
-\setlength{\headheight}{45.79982pt}
+\setlength{\headheight}{45.79991pt}
 
 % BMI logo on page 1 or else nothing
 \fancyhead{}
@@ -53,7 +53,8 @@
 \thispagestyle{fancy}
 
 \newcommand{\thedate}[1]{
-	\@date
+        \vspace*{1.0ex}
+        \@date
 	\vspace{2.0ex}
 }
 
@@ -82,7 +83,7 @@
 
 	\textbf{Paul L. Gribble, Ph.D.}\\
 	Professor\\
-	Dept. Psychology\\
+	Brain and Mind Institute, Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
 	Western University Canada\\
 	{\color{uwopurple}paul@gribblelab.org | \href{http://www.gribblelab.org}{www.gribblelab.org}}
@@ -95,7 +96,7 @@
 
 	\textbf{Paul L. Gribble, Ph.D.}\\
 	Professor\\
-	Dept. Psychology\\
+	Brain and Mind Institute, Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
 	Western University Canada\\
 	{\color{uwopurple}paul@gribblelab.org | \href{http://www.gribblelab.org}{www.gribblelab.org}}
