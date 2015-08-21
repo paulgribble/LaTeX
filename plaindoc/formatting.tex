@@ -1,0 +1,70 @@
+% FONTS
+\usepackage{fontspec}
+\usepackage{mathpazo} % for palatino math
+\setmainfont{Lyon Text}\linespread{1.05}
+\setsansfont{Myriad Pro}
+\setmonofont{Consolas}
+
+% GRAPHICS
+\usepackage{graphicx}
+\usepackage[labelfont=bf]{caption}   % make caption labels boldface
+
+% PAGE MARGINS
+\usepackage[margin=1.5in]{geometry}
+
+% PARAGRAPH SPACING
+\setlength{\parskip}{2.0ex}
+\setlength{\parindent}{0ex}
+
+% LISTS
+\usepackage{enumitem}
+\setenumerate{itemsep=0ex}
+\setitemize{itemsep=0ex}
+
+% DEFINE SOME COLORS
+\usepackage{color}
+\definecolor{light-blue}{RGB}{37,128,162}
+\definecolor{light-gray}{gray}{0.95}
+\definecolor{dark-gray}{gray}{0.50}
+
+% SECTIONS AND CHAPTER HEADINGS FORMATTING
+\usepackage[compact]{titlesec}
+\titleformat*{\section}{\sffamily\large\bfseries}
+\titlespacing{\section}{0pt}{2ex}{1ex}
+\titleformat*{\subsection}{\sffamily\normalsize\bfseries}
+\titlespacing{\subsection}{0pt}{2ex}{0ex}
+
+% ------- CUSTOM TITLE FORMAT -------
+%
+\makeatletter
+\renewcommand{\maketitle}{
+\begin{flushleft}          % right align
+{\LARGE\@title}            % increase the font size of the title
+\vspace{20pt}\\            % vertical space between the title and author name
+{\large\@author}           % author name
+\vspace{5pt}\\             % vertical space between author name and date
+\@date                     % date
+\vspace{20pt}              % vertical space between the author block and abstract
+\end{flushleft}
+}
+% -----------------------------------
+
+% URL LINKS
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=light-blue, linkcolor=black}
+
+% CODE LISTINGS
+\usepackage{listings}
+\lstset{columns=fullflexible,
+  basicstyle=\small\ttfamily,
+  backgroundcolor=\color{light-gray},
+  frame=lines, frame=lrtb, framesep=3pt, rulecolor=\color{dark-gray},
+  aboveskip=10pt,
+  belowskip=15pt,
+  breaklines=true,
+  showstringspaces=false,
+  keepspaces=true}
+
+% FOR DATE AND TIME
+\usepackage[short]{datetime} 
+
