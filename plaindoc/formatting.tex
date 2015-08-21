@@ -1,16 +1,14 @@
 % FONTS
 \usepackage{fontspec}
+\usepackage{microtype} % Better typography
 \usepackage{mathpazo} % for palatino math
-%\setmainfont{Lyon Text}\linespread{1.05}
-\setmainfont{Goudy Oldstyle Std}
-\setsansfont{Myriad Pro}
-\setmonofont{Consolas}
-
-\usepackage{lettrine} % for drop caps
-\usepackage{type1cm}
+\setmainfont{Lyon Text}
+%\setmainfont{Goudy Oldstyle Std}
+%\setsansfont{Myriad Pro}
+%\setmonofont{Consolas}
 
 % PAGE MARGINS
-\usepackage[margin=1.5in]{geometry}
+\usepackage[margin=1.2in]{geometry}
 
 % PARAGRAPH SPACING
 %\setlength{\parskip}{2.0ex}
@@ -33,7 +31,7 @@
 \makeatletter
 \renewcommand{\maketitle}{
 \begin{flushleft}          % right align
-{\LARGE\@title}            % increase the font size of the title
+{\Large\bfseries\@title}   % increase the font size of the title
 \vspace{20pt}\\            % vertical space between the title and author name
 {\large\@author}           % author name
 \vspace{5pt}\\             % vertical space between author name and date
@@ -42,7 +40,3 @@
 \end{flushleft}
 }
 % -----------------------------------
-
-% FOR DATE AND TIME
-\usepackage[short]{datetime} 
-
