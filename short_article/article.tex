@@ -1,11 +1,11 @@
 % A SHORT ARTICLE
 
-\documentclass[letterpaper,titlepage,12pt]{article}
+\documentclass[letterpaper,titlepage,11pt]{article}
 
 % ---------- CHOOSE A FONT ----------
 %
-\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
-\usepackage[T1]{fontenc}
+%\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+%\usepackage[T1]{fontenc}
 
 %\usepackage{fontspec}
 %\setmainfont{Baskerville}					% Baskerville (use xelatex not pdflatex)
@@ -21,14 +21,24 @@
 %\usepackage{helvet}                        % Helvetica
 %\renewcommand*\familydefault{\sfdefault}
 
-\usepackage{palatino,mathpazo}             % Palatino
-\RequirePackage[scaled=0.92]{helvet}
-\RequirePackage[scaled=1.02]{inconsolata}
-\linespread{1.05}
+%\usepackage{palatino,mathpazo}             % Palatino
+%\RequirePackage[scaled=0.92]{helvet}
+%\RequirePackage[scaled=1.02]{inconsolata}
+%\linespread{1.05}
 
 %\usepackage{libertine}                      % Libertine
 
 % (or leave all commented out for LaTeX default, Computer Modern)
+% -----------------------------------
+
+% --------- SCREW IT, LET'S USE FONTSPEC AND XELATEX ---------
+%
+\usepackage{fontspec}
+\usepackage{mathpazo}
+%\setmainfont{Guardian TextEgyp}\linespread{1.15}
+\setmainfont{Lyon Text}%\linespread{1.05}
+\setsansfont{Myriad Pro}
+\setmonofont{Consolas}
 % -----------------------------------
 
 % --------- MISC FORMATTING ---------
