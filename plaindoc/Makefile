@@ -1,5 +1,5 @@
 latexfile = doc
-texengine = lualatex
+texengine = xelatex
 
 $(latexfile).pdf: *.tex
 	$(texengine) $(latexfile)
