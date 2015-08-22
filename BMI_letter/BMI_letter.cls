@@ -23,6 +23,7 @@
 
 % FONTS
 \RequirePackage{fontspec}
+\RequirePackage{microtype}
 %\setmainfont{Guardian TextEgyp}\linespread{1.15}
 \setmainfont{Goudy Oldstyle Std}
 \setsansfont{Helvetica Neue}
@@ -32,7 +33,7 @@
 \RequirePackage{ifthen}
 
 \RequirePackage{fancyhdr}
-\setlength{\headheight}{45.79991pt}
+\setlength{\headheight}{46.06982pt}
 
 % BMI logo on page 1 or else nothing
 \fancyhead{}
@@ -43,7 +44,7 @@
 % BMI footer on page 1 or else just the page number
 \fancyfoot{}
 \fancyfoot[L]{\ifthenelse{\value{page}=1}
-  {\footnotesize\selectfont\sffamily \textbf{Brain and Mind Institute, Western University}, Natural
+  {\scriptsize\selectfont\sffamily\textbf{Brain and Mind Institute, Western University}, Natural
     Sciences Centre, Rm. 120\\1151 Richmond St. N., London, ON, Canada N6A 5B7
     | t. 519.661.2111 ext. 86057 | {\color{uwopurple}\href{http://www.uwo.ca/bmi}{www.uwo.ca/bmi}}}
   {\thepage} }
