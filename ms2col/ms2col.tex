@@ -1,8 +1,16 @@
-\documentclass[twocolumn,letterpaper]{article}
+\documentclass[twocolumn,letterpaper,11pt]{article}
 
-\usepackage{times}
-\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
-\usepackage[T1]{fontenc}
+%\usepackage{mathpazo} % for palatino math
+%\usepackage{times}
+%\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+%\usepackage[T1]{fontenc}
+
+% use xelatex!
+\usepackage{fontspec}
+\usepackage{microtype} % Better typography
+\usepackage{mathpazo} % for palatino math
+\setmainfont{Lyon Text}
+\setsansfont{Myriad Pro}
 
 \usepackage[margin=1.0in,includefoot]{geometry}
 
@@ -85,7 +93,7 @@ some data already.
 
 \begin{figure}
   \centering
-  \includegraphics[width=\columnwidth]{figure.pdf}
+  \includegraphics[width=0.95\columnwidth]{figure.pdf}
   \caption{Some data from our experiment.}
   \label{fig:subjectmeans}
 \end{figure}    
