@@ -1,8 +1,9 @@
 latexfile = doc
 texengine = xelatex
 
-$(latexfile).pdf: *.tex
+$(latexfile).pdf: *.tex refs.bib
 	$(texengine) $(latexfile)
+	bibtex $(latexfile)
 	while ($(texengine) $(latexfile) ; \
 	grep -q "Rerun to get" $(latexfile).log ) do true ; \
 	done
