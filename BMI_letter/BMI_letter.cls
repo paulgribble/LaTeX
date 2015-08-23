@@ -25,7 +25,7 @@
 \RequirePackage{fontspec}
 \RequirePackage{microtype}
 %\setmainfont{Guardian TextEgyp}\linespread{1.15}
-\setmainfont{Goudy Oldstyle Std}
+\setmainfont{Goudy Oldstyle Std}\linespread{1.05}
 \setsansfont{Helvetica Neue}
 \setmonofont{Consolas}
 
