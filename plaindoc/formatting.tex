@@ -1,48 +1,42 @@
-% FONTS
 \usepackage{fontspec}
 \usepackage{microtype} % Better typography
 \usepackage{mathpazo} % for palatino math
-%\setmainfont{Lyon Text}
-\setmainfont{Goudy Oldstyle Std}\linespread{1.05}
-%\setsansfont{Myriad Pro}
-%\setmonofont{Consolas}
-
-% MATH
-\usepackage{mathtools}               % mathtools and amsmath
+\setmainfont{Lyon Text}\linespread{1.05}
+\setsansfont{Guardian TextEgyp}\linespread{1.1}
+\setmonofont{Menlo}
 
 % PAGE MARGINS
-\usepackage[margin=1.2in]{geometry}
+\usepackage[margin=1.0in]{geometry}
 
 % PARAGRAPH SPACING
-\setlength{\parskip}{1.0ex}
-%\setlength{\parindent}{0ex}
+\setlength{\parskip}{2.0ex}
+\setlength{\parindent}{0ex}
 
 % LISTS
 \usepackage{enumitem}
-\setenumerate{itemsep=0pt}
-\setitemize{itemsep=0pt}
+\setenumerate{noitemsep,nolistsep}
+\setitemize{noitemsep,nolistsep}
 
 % SECTIONS AND CHAPTER HEADINGS FORMATTING
 \usepackage[compact,noindentafter]{titlesec}
-\titleformat*{\section}{\large\bfseries}
-\titlespacing{\section}{0pt}{2ex}{1ex}
-\titleformat*{\subsection}{\normalsize\bfseries}
-\titlespacing{\subsection}{0pt}{2ex}{0ex}
+\titleformat*{\section}{\sffamily\large\bfseries}
+\titlespacing{\section}{0pt}{0ex}{0ex}
+\titleformat*{\subsection}{\sffamily\normalsize\bfseries}
+\titlespacing{\subsection}{0pt}{0ex}{0ex}
 
-% FOOTNOTES
-\usepackage[bottom]{footmisc}		 % footnotes at bottom of page
+\setlength{\headheight}{14.49998pt}
 
 % ------- CUSTOM TITLE FORMAT -------
 %
 \makeatletter
 \renewcommand{\maketitle}{
 \begin{flushleft}          % right align
-{\Large\bfseries\@title}   % increase the font size of the title
-\vspace{20pt}\\            % vertical space between the title and author name
-{\large\@author}           % author name
+{\Large\sffamily\bfseries\@title}   % increase the font size of the title
+\vspace{10pt}\\            % vertical space between the title and author name
+{\large\sffamily\@author}           % author name
 \vspace{5pt}\\             % vertical space between author name and date
-\@date                     % date
-\vspace{20pt}              % vertical space between the author block and abstract
+\sffamily\@date                     % date
+\vspace{10pt}              % vertical space between the author block and abstract
 \end{flushleft}
 }
 % -----------------------------------
