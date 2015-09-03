@@ -5,17 +5,16 @@
 % 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{BMI_letter}[2014/08/08 v0.01 Brain and Mind letterhead]
-\LoadClass[12pt,letterpaper]{article}
+\LoadClass[10pt,letterpaper]{article}
 
 % page margins and paragraph spacing
-\RequirePackage[top=1.0in, left=1.0in, right=1.0in, bottom=1.25in, includefoot]{geometry}
+\RequirePackage[top=1.0in, left=1.0in, right=1.0in, bottom=1.3in, includefoot]{geometry}
 \setlength{\parskip}{1.5ex}
 \setlength{\parindent}{0pt}
 
 % font
 %\RequirePackage[protrusion=true,expansion=true]{microtype} % Better typography
 %\RequirePackage[T1]{fontenc}
-%\RequirePackage{palatino,mathpazo}             % Palatino
 %\linespread{1.05}
 %\RequirePackage[scaled=0.92]{helvet}
 %\RequirePackage[scaled=1.02]{inconsolata}
@@ -24,9 +23,8 @@
 % FONTS
 \RequirePackage{fontspec}
 \RequirePackage{microtype}
-%\setmainfont{Guardian TextEgyp}\linespread{1.15}
-\setmainfont{Goudy Oldstyle Std}\linespread{1.05}
-\setsansfont{Helvetica Neue}
+\setmainfont{Guardian TextEgyp}\linespread{1.15}
+\setsansfont[Scale=1.1]{Helvetica Neue}
 \setmonofont{Consolas}
 
 \RequirePackage{graphicx}
@@ -44,7 +42,7 @@
 % BMI footer on page 1 or else just the page number
 \fancyfoot{}
 \fancyfoot[L]{\ifthenelse{\value{page}=1}
-  {\scriptsize\selectfont\sffamily\textbf{Brain and Mind Institute, Western University}, Natural
+  {\footnotesize\selectfont\sffamily\textbf{Brain and Mind Institute, Western University}, Natural
     Sciences Centre, Rm. 120\\1151 Richmond St. N., London, ON, Canada N6A 5B7
     | t. 519.661.2111 ext. 86057 | {\color{uwopurple}\href{http://www.uwo.ca/bmi}{www.uwo.ca/bmi}}}
   {\thepage} }
