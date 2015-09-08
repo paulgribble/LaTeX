@@ -5,12 +5,12 @@
 % 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{BMI_letter}[2014/08/08 v0.01 Brain and Mind letterhead]
-\LoadClass[10pt,letterpaper]{article}
+\LoadClass[11pt,letterpaper]{article}
 
 % page margins and paragraph spacing
-\RequirePackage[top=1.0in, left=1.0in, right=1.0in, bottom=1.3in, includefoot]{geometry}
+\RequirePackage[top=1.0in, left=1.0in, right=1.0in, bottom=1.2in, includefoot]{geometry}
 \setlength{\parskip}{1.5ex}
-\setlength{\parindent}{0pt}
+%\setlength{\parindent}{0pt}
 
 \usepackage{setspace}
 
@@ -33,7 +33,7 @@
 \RequirePackage{ifthen}
 
 \RequirePackage{fancyhdr}
-\setlength{\headheight}{46.06982pt}
+\setlength{\headheight}{45.79982pt}
 
 % BMI logo on page 1 or else nothing
 \fancyhead{}
@@ -61,34 +61,41 @@
 \thispagestyle{fancy}
 
 \newcommand{\thedate}[1]{
-        \vspace*{1.0ex}
+        \vspace*{0.0ex}
+        \noindent
         \@date
-	\vspace{2.0ex}
+	\vspace{1.0ex}
 }
 
 \newcommand{\recipient}[1]{
+	\noindent
 	#1
-	\vspace{2.5ex}
+	\vspace{1.5ex}
 }
 
 \newcommand{\regarding}[1]{
+	\noindent
 	\textbf{Re: #1}
 	\vspace{1.5ex}
 }
 
 \newcommand{\greeting}[1]{
+	\noindent
 	#1
 }
 
-\raggedright
+%\raggedright
 
 \newcommand{\closingsig}[1]{
+	\noindent
 	\vspace{2.0ex}
 	#1
 	\vspace{2.0ex}
 
+	\noindent
 	\includegraphics[width=4.0cm]{signature.pdf}\vspace{0.0ex}\\
 
+	\noindent
 	\textbf{Paul L. Gribble, Ph.D.}\\
 	Professor\\
 	Brain and Mind Institute, Dept. Psychology\\
@@ -98,10 +105,12 @@
 }
 
 \newcommand{\closingnosig}[1]{
+	\noindent
 	\vspace{2.0ex}
 	#1
 	\vspace{25mm}
 
+	\noindent
 	\textbf{Paul L. Gribble, Ph.D.}\\
 	Professor\\
 	Brain and Mind Institute, Dept. Psychology\\
