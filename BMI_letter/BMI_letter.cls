@@ -44,9 +44,9 @@
 % BMI footer on page 1 or else just the page number
 \fancyfoot{}
 \fancyfoot[L]{\ifthenelse{\value{page}=1}
-  {\footnotesize\selectfont\sffamily\setstretch{1.2}\textbf{Brain and Mind Institute, Western University}, Natural
+  {\scriptsize\selectfont\sffamily\setstretch{1.2}\textbf{Brain and Mind Institute, Western University}, Natural
     Sciences Centre, Rm. 120\\1151 Richmond St. N., London, ON, Canada N6A 5B7
-    | t. 519.661.2111 ext. 86057 | {\color{uwopurple}\href{http://www.uwo.ca/bmi}{www.uwo.ca/bmi}}}
+    | t. 519.661.2111 ext. 86057 | www.uwo.ca/bmi}
   {\thepage} }
 \renewcommand{\footrulewidth}{0.0pt}
 
