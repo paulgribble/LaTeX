@@ -5,11 +5,11 @@
 % 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{BMI_letter}[2014/08/08 v0.01 Brain and Mind letterhead]
-\LoadClass[11pt,letterpaper]{article}
+\LoadClass[10pt,letterpaper]{article}
 
 % page margins and paragraph spacing
 \RequirePackage[top=1.0in, left=1.0in, right=1.0in, bottom=1.2in, includefoot]{geometry}
-\setlength{\parskip}{1.5ex}
+\setlength{\parskip}{2.0ex}
 \setlength{\parindent}{0pt}
 
 \usepackage{setspace}
@@ -25,7 +25,7 @@
 % FONTS
 \RequirePackage{fontspec}
 \RequirePackage{microtype}
-\setmainfont{Guardian TextEgyp}\linespread{1.20}
+\setmainfont[BoldFont={Guardian TextEgyp Medium}]{Guardian TextEgyp}\linespread{1.20}
 \setsansfont[Scale=1.1]{Helvetica Neue}
 \setmonofont{Consolas}
 
@@ -84,16 +84,17 @@
 	#1
 }
 
-%\raggedright
+\raggedright
 
 \newcommand{\closingsig}[1]{
+	\vspace{3.0ex}
 	\noindent
-	\vspace{2.0ex}
 	#1
 	\vspace{2.0ex}
 
 	\noindent
-	\includegraphics[width=4.0cm]{signature.pdf}\vspace{0.0ex}\\
+	\includegraphics[height=20mm]{signature.pdf}\vspace{0.0ex}\\
+	\vspace{1.0ex}
 
 	\noindent
 	\textbf{Paul L. Gribble, Ph.D.}\\
@@ -101,12 +102,12 @@
 	Brain and Mind Institute, Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
 	Western University Canada\\
-	{\color{uwopurple}paul@gribblelab.org | \href{http://www.gribblelab.org}{www.gribblelab.org}}
+	{paul@gribblelab.org | www.gribblelab.org}
 }
 
 \newcommand{\closingnosig}[1]{
+	\vspace{3.0ex}
 	\noindent
-	\vspace{2.0ex}
 	#1
 	\vspace{25mm}
 
@@ -116,7 +117,7 @@
 	Brain and Mind Institute, Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
 	Western University Canada\\
-	{\color{uwopurple}paul@gribblelab.org | \href{http://www.gribblelab.org}{www.gribblelab.org}}
+	{paul@gribblelab.org | www.gribblelab.org}
 }
 
 
