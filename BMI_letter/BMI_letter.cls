@@ -10,7 +10,7 @@
 % page margins and paragraph spacing
 \RequirePackage[top=1.0in, left=1.0in, right=1.0in, bottom=1.2in, includefoot]{geometry}
 \setlength{\parskip}{1.5ex}
-%\setlength{\parindent}{0pt}
+\setlength{\parindent}{0pt}
 
 \usepackage{setspace}
 
