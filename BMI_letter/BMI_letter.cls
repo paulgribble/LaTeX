@@ -25,7 +25,7 @@
 % FONTS
 \RequirePackage{fontspec}
 \RequirePackage{microtype}
-\setmainfont[BoldFont={Guardian TextEgyp Medium}]{Guardian TextEgyp}\linespread{1.20}
+\setmainfont[BoldFont={Guardian TextEgyp Medium}]{Guardian TextEgyp}\linespread{1.25}
 \setsansfont[Scale=1.1]{Helvetica Neue}
 \setmonofont{Consolas}
 
