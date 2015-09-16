@@ -8,19 +8,11 @@
 \LoadClass[10pt,letterpaper]{article}
 
 % page margins and paragraph spacing
-\RequirePackage[top=1.0in, left=1.0in, right=1.0in, bottom=1.2in, includefoot]{geometry}
+\RequirePackage[letterpaper, top=2.5in, left=1.125in, right=1.125in, bottom=1.5in, headsep=1.297in, headheight=45.3723pt, footskip=0.675in]{geometry}
 \setlength{\parskip}{2.0ex}
 \setlength{\parindent}{0pt}
 
-\usepackage{setspace}
-
-% font
-%\RequirePackage[protrusion=true,expansion=true]{microtype} % Better typography
-%\RequirePackage[T1]{fontenc}
-%\linespread{1.05}
-%\RequirePackage[scaled=0.92]{helvet}
-%\RequirePackage[scaled=1.02]{inconsolata}
-%\usepackage[bitstream-charter]{mathdesign} % Charter BT
+\RequirePackage{setspace}
 
 % FONTS
 \RequirePackage{fontspec}
@@ -33,12 +25,13 @@
 \RequirePackage{ifthen}
 
 \RequirePackage{fancyhdr}
-\setlength{\headheight}{45.79982pt}
+
+%\RequirePackage{showframe}
 
 % BMI logo on page 1 or else nothing
 \fancyhead{}
 \fancyhead[L]{\ifthenelse{\value{page}=1}
-  {\hspace{-.57in}\includegraphics[width=1.71in]{BrainMindInst_RGB.pdf}\vspace{0pt}}  { } }
+  {\hspace{-.565in}\includegraphics[height=0.578in]{BrainMindInst_RGB.pdf}\vspace{0pt}}  { } }
 \renewcommand{\headrulewidth}{0.0pt}
 
 % BMI footer on page 1 or else just the page number
@@ -61,7 +54,6 @@
 \thispagestyle{fancy}
 
 \newcommand{\thedate}[1]{
-        \vspace*{0.0ex}
         \noindent
         \@date
 	\vspace{1.0ex}
@@ -70,13 +62,13 @@
 \newcommand{\recipient}[1]{
 	\noindent
 	#1
-	\vspace{1.5ex}
+	\vspace{1.0ex}
 }
 
 \newcommand{\regarding}[1]{
 	\noindent
 	\textbf{Re: #1}
-	\vspace{1.5ex}
+	\vspace{2.0ex}
 }
 
 \newcommand{\greeting}[1]{
