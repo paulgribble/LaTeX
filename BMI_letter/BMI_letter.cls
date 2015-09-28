@@ -17,8 +17,9 @@
 % FONTS
 \RequirePackage{fontspec}
 \RequirePackage{microtype}
-\setmainfont[BoldFont={Guardian TextEgyp Medium}]{Guardian TextEgyp}\linespread{1.25}
-\setsansfont[Scale=1.1]{Helvetica Neue}
+%\setmainfont[BoldFont={Guardian TextEgyp Medium}]{Guardian TextEgyp}\linespread{1.25}
+\setmainfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}\linespread{1.0833}
+\setsansfont[BoldFont={BentonSans Bold}]{BentonSans}
 \setmonofont{Consolas}
 
 \RequirePackage{graphicx}
@@ -37,7 +38,7 @@
 % BMI footer on page 1 or else just the page number
 \fancyfoot{}
 \fancyfoot[L]{\ifthenelse{\value{page}=1}
-  {\scriptsize\selectfont\sffamily\setstretch{1.2}\textbf{Brain and Mind Institute, Western University}, Natural
+  {\footnotesize\selectfont\sffamily\setstretch{1.2}\textbf{Brain and Mind Institute, Western University}, Natural
     Sciences Centre, Rm. 120\\1151 Richmond St. N., London, ON, Canada N6A 5B7
     | t. 519.661.2111 ext. 86057 | www.uwo.ca/bmi}
   {\thepage} }
