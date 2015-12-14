@@ -5,10 +5,10 @@
 % 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{BMI_letter}[2014/08/08 v0.01 Brain and Mind letterhead]
-\LoadClass[10pt,letterpaper]{article}
+\LoadClass[11pt,letterpaper]{article}
 
 % page margins and paragraph spacing
-\RequirePackage[letterpaper, top=2.5in, left=1.125in, right=1.125in, bottom=1.5in, headsep=1.297in, headheight=45.3723pt, footskip=0.675in]{geometry}
+\RequirePackage[letterpaper, top=2.5in, left=1.125in, right=1.125in, bottom=1.5in, headsep=1.297in, headheight=45.8523pt, footskip=0.675in]{geometry}
 \setlength{\parskip}{2.0ex}
 \setlength{\parindent}{0pt}
 
@@ -18,7 +18,8 @@
 \RequirePackage{fontspec}
 \RequirePackage{microtype}
 %\setmainfont[BoldFont={Guardian TextEgyp Medium}]{Guardian TextEgyp}\linespread{1.25}
-\setmainfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}\linespread{1.0833}
+%\setmainfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}\linespread{1.0833}
+\setmainfont[BoldFont={SF UI Display Bold}]{SF UI Display}\linespread{1.0833}
 \setsansfont[BoldFont={BentonSans Bold}]{BentonSans}
 \setmonofont{Consolas}
 
