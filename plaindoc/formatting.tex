@@ -1,14 +1,16 @@
 \usepackage{fontspec}
 \usepackage{microtype} % Better typography
 \usepackage{mathpazo} % for palatino math
-%\setmainfont{Lyon Text}\linespread{1.05}
-\setmainfont{Guardian TextEgyp}\linespread{1.15}
-%\setsansfont[Scale=1.1]{Helvetica Neue}
-\setsansfont[BoldFont={Guardian TextEgyp Medium}]{Guardian TextEgyp}
-\setmonofont{Menlo}
+\setmainfont{Lyon Text}\linespread{1.05}
+%\setmainfont{Guardian TextEgyp}\linespread{1.15}
+\setsansfont[Scale=1.1]{Helvetica Neue}
+%\setsansfont[BoldFont={Guardian TextEgyp Medium}]{Guardian TextEgyp}
+%\setmonofont{Menlo}
 
 % PAGE MARGINS
 \usepackage[margin=1.0in]{geometry}
+
+\tolerance=5000
 
 % PARAGRAPH SPACING
 \setlength{\parskip}{2.0ex}
@@ -21,10 +23,10 @@
 
 % SECTIONS AND CHAPTER HEADINGS FORMATTING
 \usepackage[compact,noindentafter]{titlesec}
-\titleformat*{\section}{\sffamily\large\bfseries}
-\titlespacing{\section}{0pt}{0ex}{0ex}
-\titleformat*{\subsection}{\sffamily\normalsize\bfseries}
-\titlespacing{\subsection}{0pt}{0ex}{0ex}
+\titleformat*{\section}{\sffamily\normalsize\bfseries}
+\titlespacing{\section}{0pt}{1.5ex}{0ex}
+\titleformat*{\subsection}{\sffamily\small\bfseries}
+\titlespacing{\subsection}{0pt}{1ex}{0ex}
 
 \setlength{\headheight}{14.49998pt}
 
@@ -33,12 +35,12 @@
 \makeatletter
 \renewcommand{\maketitle}{
 \begin{flushleft}          % right align
-{\Large\sffamily\bfseries\@title}   % increase the font size of the title
+{\large\sffamily\bfseries\@title}   % increase the font size of the title
 \vspace{10pt}\\            % vertical space between the title and author name
-{\large\sffamily\@author}           % author name
+{\small\sffamily\@author}           % author name
 \vspace{5pt}\\             % vertical space between author name and date
-\sffamily\@date                     % date
-\vspace{10pt}              % vertical space between the author block and abstract
+\small\sffamily\@date                     % date
+\vspace{20pt}              % vertical space between the author block and abstract
 \end{flushleft}
 }
 % -----------------------------------
