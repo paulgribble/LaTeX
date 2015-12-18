@@ -3,8 +3,8 @@
 \usepackage{mathpazo} % for palatino math
 \setmainfont{Lyon Text}\linespread{1.05}
 %\setmainfont{Guardian TextEgyp}\linespread{1.15}
-\setsansfont[Scale=1.1]{Helvetica Neue}
-%\setsansfont[BoldFont={Guardian TextEgyp Medium}]{Guardian TextEgyp}
+%\setsansfont[Scale=1.1]{Helvetica Neue}
+\setsansfont[BoldFont={Guardian TextEgyp Medium}]{Guardian TextEgyp}
 %\setmonofont{Menlo}
 
 % PAGE MARGINS
@@ -23,9 +23,9 @@
 
 % SECTIONS AND CHAPTER HEADINGS FORMATTING
 \usepackage[compact,noindentafter]{titlesec}
-\titleformat*{\section}{\sffamily\normalsize\bfseries}
+\titleformat*{\section}{\sffamily\large\bfseries}
 \titlespacing{\section}{0pt}{1.5ex}{0ex}
-\titleformat*{\subsection}{\sffamily\small\bfseries}
+\titleformat*{\subsection}{\sffamily\normalsize\bfseries}
 \titlespacing{\subsection}{0pt}{1ex}{0ex}
 
 \setlength{\headheight}{14.49998pt}
@@ -35,12 +35,12 @@
 \makeatletter
 \renewcommand{\maketitle}{
 \begin{flushleft}          % right align
-{\large\sffamily\bfseries\@title}   % increase the font size of the title
-\vspace{10pt}\\            % vertical space between the title and author name
-{\small\sffamily\@author}           % author name
-\vspace{5pt}\\             % vertical space between author name and date
+{\Large\sffamily\bfseries\@title}   % increase the font size of the title
+\vspace{2ex}\\            % vertical space between the title and author name
+{\normalsize\sffamily\@author}           % author name
+\vspace{0ex}\\             % vertical space between author name and date
 \small\sffamily\@date                     % date
-\vspace{20pt}              % vertical space between the author block and abstract
+\vspace{5ex}              % vertical space between the author block and abstract
 \end{flushleft}
 }
 % -----------------------------------
