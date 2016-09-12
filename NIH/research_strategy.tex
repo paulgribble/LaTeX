@@ -13,7 +13,7 @@
 \pagestyle{empty}
 
 \usepackage{graphicx}
-\usepackage[labelfont=bf,skip=3ex,width=0.9\textwidth,justification=raggedright,font=small]{caption}
+\usepackage[labelfont=bf,skip=1ex,width=0.9\textwidth,justification=raggedright,font=small]{caption}
 \usepackage{wrapfig}
 
 \usepackage{citecollapse}
@@ -67,18 +67,26 @@ dictumst.
 
 \lipsum[1]
 
-\begin{wrapfigure}{r}{0.25\textwidth}
+\begin{wrapfigure}[13]{R}{0in}
   \centering
-  \resizebox{0.25\textwidth}{!}{\includegraphics[width=2in]{figures/t1_brain.jpg}}
-  \vspace{-0.3in}
+  \raisebox{0pt}[\dimexpr\height-0.6\baselineskip\relax]{\includegraphics[width=0.25\textwidth]{figures/t1_brain.jpg}}
   \caption{This is a picture of a brain. Blah blah blah.}
-  \vspace{-0.3in}
   \label{fig:brain}
 \end{wrapfigure}
 
-\lipsum[10-18]
+\lipsum[10-13]
 
+\begin{wrapfigure}[13]{L}{0in}
+  \centering
+  \raisebox{0pt}[\dimexpr\height-0.6\baselineskip\relax]{\includegraphics[width=0.25\textwidth]{figures/t1_brain.jpg}}
+  \caption{This is a picture of a brain. Blah blah blah.}
+  \label{fig:brain2}
+\end{wrapfigure}
 
+\lipsum[14-17]
+
+\newpage
+\clearpage
 \bibliography{refs}
 \bibliographystyle{nih} % created nih.bst with "latex makebst" command
 
