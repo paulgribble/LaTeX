@@ -1,0 +1,89 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+
+\setlength{\parskip}{1.0ex}
+\setlength{\parindent}{0ex}
+
+\usepackage[T1]{fontenc}
+
+\usepackage{fontspec}
+\setmainfont{Arial}
+
+\pagestyle{empty}
+
+\usepackage{graphicx}
+\usepackage[labelfont=bf,skip=3ex,width=0.9\textwidth,justification=raggedright,font=small]{caption}
+\usepackage{wrapfig}
+
+\usepackage{citecollapse}
+\usepackage[nospace]{cite}
+
+\let\oldthebibliography=\thebibliography
+\let\endoldthebibliography=\endthebibliography
+\renewenvironment{thebibliography}[1]{%
+  \begin{oldthebibliography}{#1}%
+    \setlength{\parskip}{0ex}%
+    \setlength{\itemsep}{0.25ex}%
+}%
+{%
+  \end{oldthebibliography}%
+}
+
+\usepackage[compact]{titlesec}
+\titlespacing*{\section}{0pt}{0.75ex}{0.25ex}
+\titleformat*{\section}{\normalsize\bfseries}
+\titlespacing*{\subsection}{0pt}{1.0ex}{0pt}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titlespacing*{\subsubsection}{0pt}{0.75ex}{0.25ex}
+\titleformat*{\subsubsection}{\normalsize\bfseries}
+
+\usepackage{lipsum}
+
+\begin{document}
+
+\section*{Specific Aims}
+
+Here are two citations to some papers
+\cite{HODGKIN:1952aa,HODGKIN:1952ab,Hodgkin:1947aa} and another
+\cite{Hodgkin:1990aa}. Quisque ullamcorper placerat ipsum. Cras
+nibh. Morbi vel justo vitae lacus tincidunt ultrices. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. In hac habitasse platea
+dictumst.
+
+\lipsum[1-7]
+
+\newpage
+
+\section*{Significance}
+
+\lipsum[1-9]
+
+\section*{Innovation}
+
+\lipsum[1-5]
+
+\section*{Approach}
+
+\lipsum[1]
+
+\begin{wrapfigure}{r}{0.25\textwidth}
+  \centering
+  \resizebox{0.25\textwidth}{!}{\includegraphics[width=2in]{figures/t1_brain.jpg}}
+  \vspace{-0.3in}
+  \caption{This is a picture of a brain. Blah blah blah.}
+  \vspace{-0.3in}
+  \label{fig:brain}
+\end{wrapfigure}
+
+\lipsum[10-18]
+
+
+\bibliography{refs}
+\bibliographystyle{nih} % created nih.bst with "latex makebst" command
+
+\end{document}
+
+ 
+
+
