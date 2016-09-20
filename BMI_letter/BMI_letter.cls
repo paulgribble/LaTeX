@@ -8,7 +8,7 @@
 \LoadClass[10pt,letterpaper]{article}
 
 % page margins and paragraph spacing
-\RequirePackage[letterpaper, top=2.5in, left=1.125in, right=1.125in, bottom=1.5in, headsep=1.297in, headheight=45.8523pt, footskip=0.675in]{geometry}
+\RequirePackage[letterpaper, top=1.8in, left=1.125in, right=1.125in, bottom=1.5in, headsep=0.597in, headheight=45.8523pt, footskip=0.675in]{geometry}
 \setlength{\parskip}{2.0ex}
 \setlength{\parindent}{0pt}
 
@@ -81,7 +81,7 @@
 \raggedright
 
 \newcommand{\closingsig}[1]{
-	\vspace{3.0ex}
+	\vspace{2.0ex}
 	\noindent
 	#1
 	\vspace{2.0ex}
@@ -100,7 +100,7 @@
 }
 
 \newcommand{\closingnosig}[1]{
-	\vspace{3.0ex}
+	\vspace{2.0ex}
 	\noindent
 	#1
 	\vspace{25mm}
