@@ -50,7 +50,7 @@
 \definecolor{uwopurple}{rgb}{0.263,0.161,0.420}
 
 % for clickable URLs
-\RequirePackage{hyperref}
+\RequirePackage[colorlinks]{hyperref}
 
 % activate the fancy headers and footers
 \thispagestyle{fancy}
