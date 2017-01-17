@@ -17,9 +17,7 @@
 % FONTS
 \RequirePackage{fontspec}
 \RequirePackage{microtype}
-%\setmainfont[BoldFont={Guardian TextEgyp Medium}]{Guardian TextEgyp}\linespread{1.25}
 \setmainfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}\linespread{1.0833}
-%\setmainfont[BoldFont={SF UI Display Bold}]{SF UI Display}\linespread{1.0833}
 \setsansfont[BoldFont={BentonSans Bold}]{BentonSans}
 \setmonofont{Consolas}
 
