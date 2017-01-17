@@ -1,0 +1,17 @@
+\documentclass{BMI_letter}
+
+\begin{document}
+
+\thedate{$theDate$}
+
+\recipient{$for(theRecipient)$$theRecipient$$sep$\\$endfor$}
+
+\regarding{$theRegarding$}
+
+\greeting{$theGreeting$}
+
+$body$
+
+\$theClosing${Sincerely,}
+
+\end{document}
