@@ -1,6 +1,10 @@
-% My Next Article
-% Paul L. Gribble\footnote{paul@gribblelab.org}, Western University, Canada
-% 
+---  
+title: My Paper
+author:
+- Ford Prefect
+- Rick Deckard
+date: January 20, 2019
+---  
 
 # Introduction
 
@@ -23,7 +27,7 @@ I don't really have any yet. Figure \ref{fig:cat} shows a picture of a cat.
 
 \begin{figure}[H]
 \centering
-\includegraphics[height=1.5in]{cat.png}
+\includegraphics[height=1.5in]{cat.jpg}
 \caption{A cat from the interwebs}
 \label{fig:cat}
 \end{figure}
@@ -32,7 +36,9 @@ I don't really have any yet. Figure \ref{fig:cat} shows a picture of a cat.
 
 What would you like me to discuss? I could talk about how nice it is that pandoc can use .csl styles to generate bibliographies, there are lots of them here:
 
-> [https://github.com/citation-style-language/styles](https://github.com/citation-style-language/styles)
+> https://github.com/citation-style-language/styles
+
+\newpage
 
 # References
 

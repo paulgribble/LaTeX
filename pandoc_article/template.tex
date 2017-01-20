@@ -1,47 +1,44 @@
 \documentclass[letterpaper,11pt]{article}
 
-% ---------- CHOOSE A FONT ----------
-%
-\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage[margin=1.25in]{geometry}
+\setlength{\parskip}{1.5ex}
+\setlength{\parindent}{0ex}
+\usepackage{setspace}
+\doublespacing
+\usepackage{ragged2e}
 
-%\usepackage{fouriernc}                     % New Century Schoolbook
+\usepackage{amsmath}
 
-%\usepackage{charter}                        % Charter
+\usepackage{mathspec}
+\setmathfont(Digits,Latin,Greek){Palatino}
+\setmainfont{Minion Pro}
+\setsansfont[BoldFont={* Bold},Scale=0.95]{Helvetica Neue}
+\setmonofont{Monaco}
 
-%\usepackage[urw-garamond]{mathdesign}      % Garamond
-% or
-%\usepackage{fbb}
+\usepackage[labelfont=bf]{caption}
 
-%\usepackage{helvet}                        % Helvetica
-%\renewcommand*\familydefault{\sfdefault}
+\usepackage{lineno}					% line numbering
+\def\linenumberfont{\normalfont\footnotesize\sffamily}
+\setlength\linenumbersep{7mm}
 
-\usepackage{palatino,mathpazo}             % Palatino
-\RequirePackage[scaled=0.92]{helvet}
-\RequirePackage[scaled=1.02]{inconsolata}
-\linespread{1.05}
+\usepackage{gensymb}				% for \degree symbol
 
-%\usepackage{libertine}                      % Libertine
+\usepackage{graphicx}				% for loading in images
+\usepackage{float}					% better control of figure placement
 
-% (or leave all commented out for LaTeX default, Computer Modern)
-\usepackage[T1]{fontenc}
-% -----------------------------------
+\setcounter{secnumdepth}{0}			% section headings not numbered
 
-% --------- MISC FORMATTING ---------
-%
-\usepackage{natbib}                  % for our chosen bibliography style
-\usepackage{graphicx}                % for importing graphics into figures
-\usepackage{float}                   % better control of figure placement
-\usepackage{amsmath}                 % better mathematical typesetting
-\usepackage{hyperref}                % for clickable URLs and email addresses
-\urlstyle{sf}                        % san-serif font for URLs
-\usepackage[margin=1.25in]{geometry} % control page margins
-\usepackage[labelfont=bf]{caption}   % make caption labels boldface
-\usepackage[bottom]{footmisc}		 % footnotes at bottom of page
-\setlength{\skip\footins}{10mm}      % obsessing about footnote spacing
-\setlength{\parskip}{1ex}            % space between paragraphs
-\usepackage{mathtools}               % mathtools and amsmath
-% -----------------------------------
+\usepackage[compact]{titlesec}		% formatting section headers
+\titleformat*{\section}{\sffamily\normalsize\bfseries\uppercase}
+\titlespacing{\section}{0pt}{0ex}{0ex}
+\titleformat*{\subsection}{\sffamily\normalsize\bfseries}
+\titlespacing{\subsection}{0pt}{0ex}{0ex}
+\titleformat*{\subsubsection}{\sffamily\normalsize\itshape}
+\titlespacing{\subsubsection}{0pt}{0ex}{0ex}
 
+\usepackage{hyperref}				% for clickable URLs
+
+% template stuff for title, subtitle, authors and date
 $if(title)$
 \title{$title$}
 $endif$
@@ -51,20 +48,24 @@ $endif$
 \author{$for(author)$$author$$sep$ \and $endfor$}
 \date{$date$}
 
-\setcounter{secnumdepth}{0}
+
 
 \begin{document}
 
-$if(title)$
-\begin{flushleft}          % right align
-{\LARGE {$title$}}            % increase the font size of the title
-\vspace{20pt}\\            % vertical space between the title and author name
-{\large {$for(author)$$author$$sep$, $endfor$}}           % author name
-\\\$date$                   % date
-\vspace{20pt}              % vertical space between the author block and abstract
+\thispagestyle{empty}				% no page number on title page
+
+$if(title)$							% title page: custom formatting for title and authors
+\begin{flushleft}
+{\LARGE\sffamily\bfseries {$title$}}
+\vspace{3ex}\\
+{\large\sffamily {$for(author)$$author$$sep$, $endfor$}}
+\\{\sffamily $date$}
+\vspace{2ex}
 \end{flushleft}
 $endif$
 
-$body$
+\newpage
+
+$body$								% the document
 
 \end{document}
