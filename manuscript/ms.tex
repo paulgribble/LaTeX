@@ -1,77 +1,6 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
 
-% ---------- CHOOSE A FONT ----------
-%
-\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
-
-%\usepackage{fouriernc}                     % New Century Schoolbook
-
-\usepackage[bitstream-charter]{mathdesign} % Charter BT
-
-%\usepackage{fontspec}
-%\setmainfont{Baskerville}					% Baskerville (use xelatex not pdflatex)
-
-%\usepackage[urw-garamond]{mathdesign}      % Garamond
-% or
-%\usepackage{fbb}
-
-\usepackage{helvet}                        % Helvetica
-%\renewcommand*\familydefault{\sfdefault}
-
-%\usepackage{palatino,mathpazo}             % Palatino
-%\RequirePackage[scaled=0.92]{helvet}
-%\RequirePackage[scaled=1.02]{inconsolata}
-%\linespread{1.05}
-
-%\usepackage{libertine}                      % Libertine
-
-% (or leave all commented out for LaTeX default, Computer Modern)
-\usepackage[T1]{fontenc}
-% -----------------------------------
-
-% --------- MISC FORMATTING ---------
-%
-\usepackage{setspace}                % needed for doublespacing
-\doublespacing                       % doublespaced line spacing
-\usepackage{natbib}                  % for our chosen bibliography style
-\usepackage{graphicx}                % for importing graphics into figures
-\usepackage{float}                   % better control of figure placement
-\usepackage{amsmath}                 % better mathematical typesetting
-\usepackage{hyperref}                % for clickable URLs and email addresses
-\urlstyle{sf}                        % san-serif font for URLs
-\usepackage[margin=1.2in]{geometry}  % control page margins
-\usepackage[short]{datetime}         % precise date/time stamp on titlepage
-\usepackage[labelfont=bf]{caption}   % make caption labels boldface
-\usepackage[bottom]{footmisc}		 % footnotes at bottom of page
-\setlength{\skip\footins}{10mm}      % obsessing about footnote spacing
-\setlength{\parskip}{1ex}            % space between paragraphs
-\usepackage{authblk}                 % author and affiliation formatting
-\renewcommand\Affilfont{\small}      %
-\usepackage{mathtools}               % mathtools and amsmath
-\usepackage{lineno}                  % add line numbers to margin
-\def\linenumberfont{\normalfont\footnotesize\sffamily}
-\setlength\linenumbersep{7mm}
-\linenumbers
-%
-% -----------------------------------
-
-% ------- CUSTOM TITLE FORMAT -------
-%
-\makeatletter
-\renewcommand{\maketitle}{
-\begin{flushleft}       % right align
-{\LARGE\@title}         % increase the font size of the title
-\vspace{20pt}\\         % vertical space between the title and author name
-{\large\@author}        % author name
-\\\@date                % date
-\vspace{20pt}           % vertical space between the author block and abstract
-\end{flushleft}
-}
-%
-% -----------------------------------
-
-\newcommand{\degrees}{\ensuremath{^\circ}} % for nice degree symbol
-\usepackage{lipsum}                        % dummy text (you can remove this)
+\include{formatting}
 
 %------------------------------------------------------------------------------
 %	TITLE & AUTHORS & AFFILIATIONS
@@ -86,8 +15,6 @@
 \affil[2]{Department of Psychology, The University of Western Ontario}
 \affil[3]{Department of Physiology \& Pharmacology, Schulich School of Medicine \& Dentistry}
 \affil[4]{Graduate Program in Neuroscience, The University of Western Ontario}
-
-\date{}
 
 \begin{document}
 
