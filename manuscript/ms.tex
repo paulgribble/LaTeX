@@ -1,6 +1,6 @@
-\documentclass[letterpaper,12pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
-\include{formatting}
+\include{formatting}   % stick all of the LaTeX formatting into a separate file
 
 %------------------------------------------------------------------------------
 %	TITLE & AUTHORS & AFFILIATIONS
@@ -75,7 +75,11 @@ email: \url{paul@gribblelab.org}
 \newpage
 \section*{Introduction}
 
-Blah blah blah lots of crazy research has been done on this topic \citep{Mattar:2005}. Blah blah blah lots of crazy research has been done\footnote{ya ya w8ever} on this topic \citep{Mattar:2005}. Blah blah blah lots of crazy research has been done on this topic \citep{Mattar:2005}. \lipsum[1]
+Blah blah blah lots of crazy research has been done on this topic
+\citep{Mattar:2005}. Blah blah blah lots of crazy research has been
+done\footnote{ya ya w8ever} on this topic \citep{Mattar:2005}. Blah
+blah blah lots of crazy research has been done on this topic
+\citep{Mattar:2005}. \lipsum[1]
 
 \lipsum[1-3]
 
@@ -92,9 +96,11 @@ Blah blah blah lots of crazy research has been done on this topic \citep{Mattar:
 \label{eq:line}
 \end{equation}
 
-Also see Figure~\ref{fig:setupfig} for some other junk.
+\lipsum[4]
 
-\lipsum[1-3]
+\subsection*{Experimental Task}
+
+Also see Figure~\ref{fig:setupfig} for some other junk. \lipsum[1-3]
 
 %------------------------------------------------------------------------------
 %	RESULTS
@@ -119,7 +125,9 @@ Table~\ref{tbl:somedata} is totally meaningless.
 
 \newpage
 \section*{Acknowledgements}
-This research was supported by grants to PLG by the Canadian Institutes of Health Research and the Natural Sciences and Engineering Council of Canada.
+This research was supported by grants to PLG by the Canadian
+Institutes of Health Research and the Natural Sciences and Engineering
+Council of Canada.
 
 %------------------------------------------------------------------------------
 %	REFERENCES
