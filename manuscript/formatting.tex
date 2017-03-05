@@ -1,13 +1,25 @@
+% --- THIS MAKES EQUATIONS BETTER ---
+%
+\usepackage{mathtools}               				   % mathtools and amsmath
+
+
 % ---------- CHOOSE A FONT ----------
 %
 \usepackage[protrusion=true,expansion=true]{microtype} % Better typography
 \usepackage[T1]{fontenc}                               % Better typography
 
-\usepackage[scaled=0.92]{helvet}                       % Helvetica font
-\renewcommand*\familydefault{\sfdefault}               % Helvetica font
+\usepackage[scaled=0.92]{helvet}                       % load Helvetica font
 
-\usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
+\usepackage{times}									   % Times font for main text
+\usepackage{txfonts}								   % Equations using Times-like font
+
+%\renewcommand*\familydefault{\sfdefault}              % Helvetica font for main text
+
+% (or leave all font commands above commented out for LaTeX default, Computer Modern)
+
+
+\usepackage[english]{babel}							   % hyphenation etc for English
+
 
 % --------- MISC FORMATTING ---------
 %
@@ -16,7 +28,6 @@
 \usepackage{natbib}                  % for our chosen bibliography style
 \usepackage{graphicx}                % for importing graphics into figures
 \usepackage{float}                   % better control of figure placement
-\usepackage{amsmath}                 % better mathematical typesetting
 \usepackage{hyperref}                % for clickable URLs and email addresses
 \urlstyle{sf}                        % san-serif font for URLs
 \usepackage[margin=1.2in]{geometry}  % control page margins
@@ -26,13 +37,11 @@
 \setlength{\skip\footins}{10mm}      % obsessing about footnote spacing
 \setlength{\parskip}{1ex}            % space between paragraphs
 %\setlength{\parindent}{3em}	     % paragraph indentation
-\usepackage{mathtools}               % mathtools and amsmath
 \usepackage{lineno}                  % add line numbers to margin
 \def\linenumberfont{\normalfont\footnotesize\sffamily} % line numbers
 \setlength\linenumbersep{9mm}                          % line numbers
 \linenumbers                                           % line numbers
 \usepackage{authblk}                 % author and affiliation formatting
-%\renewcommand\Authfont{\sffamily}
 \renewcommand\Affilfont{\small}
 
 % --------- SECTION HEADINGS ---------
