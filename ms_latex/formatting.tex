@@ -1,0 +1,64 @@
+% --- THIS MAKES EQUATIONS BETTER ---
+%
+\usepackage{mathtools}               				   % mathtools and amsmath
+
+
+% ---------- CHOOSE A FONT ----------
+%
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage[T1]{fontenc}                               % Better typography
+
+\usepackage[english]{babel}			       % hyphenation etc for English
+
+
+% --------- MISC FORMATTING ---------
+%
+\usepackage{setspace}                % needed for doublespacing
+\doublespacing                       % doublespaced line spacing
+\usepackage{natbib}                  % for our chosen bibliography style
+\usepackage{graphicx}                % for importing graphics into figures
+\usepackage{float}                   % better control of figure placement
+\usepackage{hyperref}                % for clickable URLs and email addresses
+\urlstyle{sf}                        % san-serif font for URLs
+\usepackage[margin=1.2in]{geometry}  % control page margins
+\usepackage[short]{datetime}         % precise date/time stamp on titlepage
+\usepackage[labelfont=bf]{caption}   % make caption labels boldface
+\usepackage[bottom]{footmisc}        % footnotes at bottom of page
+\setlength{\skip\footins}{10mm}      % obsessing about footnote spacing
+\setlength{\parskip}{1ex}            % space between paragraphs
+%\setlength{\parindent}{3em}	     % paragraph indentation
+\usepackage{lineno}                  % add line numbers to margin
+\def\linenumberfont{\normalfont\footnotesize} % line numbers
+\setlength\linenumbersep{9mm}                          % line numbers
+\linenumbers                                           % line numbers
+\usepackage{authblk}                 % author and affiliation formatting
+\renewcommand\Affilfont{\small}
+
+% --------- SECTION HEADINGS ---------
+%
+\usepackage[compact]{titlesec}
+\titlespacing*{\section}{0pt}{1.5ex}{0ex}
+\titlespacing*{\subsection}{0pt}{0ex}{0ex}
+\titlespacing*{\subsubsection}{0pt}{0ex}{0ex}
+
+% ------- CUSTOM TITLE FORMAT -------
+%
+\makeatletter
+\renewcommand{\maketitle}{
+\begin{center}
+\vspace*{5mm}
+{\LARGE\@title}
+\vspace{8mm}\\
+{\large\@author}
+\end{center}
+}
+\makeatother
+
+% ------- DEGREE SYMBOL ---------
+%
+\newcommand{\degrees}{\ensuremath{^\circ}} % for nice degree symbol
+
+% ------- DUMMY TEXT --------
+%
+\usepackage{lipsum}                        % dummy text (you can remove this)
+
