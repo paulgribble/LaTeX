@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+
+\usepackage{times}
+\usepackage[scaled=0.92]{helvet}
+
+\usepackage[top=0.50in, bottom=0.20in, left=1.87cm, right=1.87cm,
+includehead, includefoot]{geometry}
+
+\setlength{\headsep}{0.15in}
+\setlength{\footskip}{0.2in}
+\setlength{\parskip}{1.0ex}
+\setlength{\parindent}{0pt}
+\setlength{\headheight}{14.49998pt}
+
+\usepackage{sectsty}
+\sectionfont{\large}
+
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{1.5ex}{0ex}
+\titleformat*{\section}{\sffamily\large\bfseries}
+\titlespacing{\subsection}{0pt}{0ex}{0ex}
+\titleformat*{\subsection}{\sffamily\normalsize\bfseries}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\titleformat*{\subsubsection}{\normalsize\bfseries}
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\rhead[]{Firstname M. Lastname PIN:8675309}
+\lhead[]{Form 101 - Proposal}
+\cfoot[]{page \thepage~of~5}
+\renewcommand{\headrulewidth}{0pt}
+
+\let\oldthebibliography=\thebibliography
+\let\endoldthebibliography=\endthebibliography
+\renewenvironment{thebibliography}[1]{%
+  \begin{oldthebibliography}{#1}%
+    \setlength{\parskip}{0ex}%
+    \setlength{\itemsep}{0.75ex}%
+}%
+{%
+  \end{oldthebibliography}%
+}
+
+\usepackage{citecollapse}
+\usepackage[font=footnotesize,labelfont=bf,skip=3pt]{caption}
+
+\usepackage{lipsum}
+
+\begin{document}
+
+\section*{Introduction}
+
+We are going to build upon the earlier work of \cite{hodgkin1952propagation}. \lipsum[1-7]
+
+\section*{Theme 1: Blah blah blah}
+
+\lipsum[8]
+
+\subsection*{Experiment 1}
+
+\lipsum[9]
+
+\begin{wrapfigure}{r}{0.25\textwidth}
+  \vspace{-27pt}
+  \begin{center}
+    \includegraphics[width=0.25\textwidth]{figure_placeholder}
+    \caption{this is a figure}
+    \label{a_label}
+  \end{center}
+  \vspace{-25pt}
+\end{wrapfigure}
+
+\lipsum[10]
+
+\subsubsection*{Controls}
+
+\lipsum[11]
+
+\section*{Significance \& Impact}
+
+\lipsum[12]
+
+\newpage
+\setcounter{page}{1}
+\fancyfoot[C]{\thepage}
+\fancyhead[L]{Form 101 - References}
+
+\bibliographystyle{unsrt}
+\bibliography{refs}
+
+\end{document}
+
+
