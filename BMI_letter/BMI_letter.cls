@@ -19,7 +19,7 @@
 \RequirePackage{microtype}
 \setmainfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}\linespread{1.0833}
 \setsansfont[BoldFont={BentonSans Bold}]{BentonSans}
-\setmonofont{Consolas}
+\setmonofont{Monaco}
 
 \RequirePackage{graphicx}
 \RequirePackage{ifthen}
