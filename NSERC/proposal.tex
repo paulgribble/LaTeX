@@ -15,7 +15,7 @@
 \sectionfont{\large}
 
 \usepackage[compact]{titlesec}
-\titlespacing{\section}{0pt}{1.5ex}{0ex}
+\titlespacing{\section}{0pt}{0ex}{0ex}
 \titleformat*{\section}{\sffamily\large\bfseries}
 \titlespacing{\subsection}{0pt}{0ex}{0ex}
 \titleformat*{\subsection}{\sffamily\normalsize\bfseries}
@@ -32,18 +32,20 @@
 \cfoot[]{page \thepage~of~5}
 \renewcommand{\headrulewidth}{0pt}
 
+\usepackage{citecollapse}
+\usepackage[nospace]{cite}
+
 \let\oldthebibliography=\thebibliography
 \let\endoldthebibliography=\endthebibliography
 \renewenvironment{thebibliography}[1]{%
   \begin{oldthebibliography}{#1}%
     \setlength{\parskip}{0ex}%
-    \setlength{\itemsep}{0.75ex}%
+    \setlength{\itemsep}{0.25ex}%
 }%
 {%
   \end{oldthebibliography}%
 }
 
-\usepackage{citecollapse}
 \usepackage[font=footnotesize,labelfont=bf,skip=3pt]{caption}
 
 \usepackage{lipsum}
@@ -87,7 +89,7 @@ We are going to build upon the earlier work of \cite{hodgkin1952propagation}. \l
 \fancyfoot[C]{\thepage}
 \fancyhead[L]{Form 101 - References}
 
-\bibliographystyle{unsrt}
+\bibliographystyle{nih}
 \bibliography{refs}
 
 \end{document}
