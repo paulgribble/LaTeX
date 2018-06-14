@@ -17,7 +17,7 @@
 % FONTS
 \RequirePackage{fontspec}
 \RequirePackage{microtype}
-\setmainfont[BoldFont={Helvetica Bold}]{Helvetica}\linespread{1.0833}
+\setmainfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}\linespread{1.0833}
 %\setmainfont[BoldFont={SF UI Display Bold}]{SF UI Display}\linespread{1.0833}
 \setsansfont[BoldFont={BentonSans Bold}]{BentonSans}
 \setmonofont{Monaco}
@@ -62,7 +62,7 @@
 \newcommand{\recipient}[1]{
 	\noindent
 	#1
-	\vspace{1.0ex}
+	\vspace{2.0ex}
 }
 
 \newcommand{\regarding}[1]{
@@ -85,7 +85,7 @@
 	\vspace{2.0ex}
 
 	\noindent
-	\includegraphics[height=20mm]{signature.pdf}\vspace{0.0ex}\\
+	\includegraphics[height=15mm]{signature.pdf}\vspace{0.0ex}\\
 	\vspace{1.0ex}
 
 	\noindent
@@ -94,7 +94,7 @@
 	Brain and Mind Institute, Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
 	Western University Canada\\
-	{paul@gribblelab.org | www.gribblelab.org}
+	{paul@gribblelab.org $\vert$ www.gribblelab.org}
 }
 
 \newcommand{\closingnosig}[1]{
@@ -109,7 +109,7 @@
 	Brain and Mind Institute, Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
 	Western University Canada\\
-	{paul@gribblelab.org | www.gribblelab.org}
+	{paul@gribblelab.org $\vert$ www.gribblelab.org}
 }
 
 
