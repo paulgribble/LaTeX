@@ -6,6 +6,8 @@
 
 \recipient{$for(theRecipient)$$theRecipient$$sep$\\$endfor$}
 
+\vspace{3.0ex}
+
 \regarding{$theRegarding$}
 
 \greeting{$theGreeting$}
