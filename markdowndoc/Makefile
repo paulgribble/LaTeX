@@ -9,7 +9,7 @@ doc.pdf:	doc.md refs.bib
 	-V geometry:margin=1.1in \
 	-V linestretch=1.0 \
 	-V mainfont="Palatino" \
-	-V mainfontoptions="{Numbers=Lining}" \
+	-V mainfontoptions="Numbers=Lining,Ligatures=Common" \
 	-V sansfont="Helvetica" \
 	-V subparagraph \
 	--pdf-engine=xelatex \
