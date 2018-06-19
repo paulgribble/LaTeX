@@ -12,6 +12,8 @@ doc.pdf:	doc.md refs.bib
 	-V mainfontoptions="Numbers=Lining,Ligatures=Common" \
 	-V sansfont="Helvetica" \
 	-V subparagraph \
+	-V numbersections \
+	-V secnumdepth=4 \
 	--pdf-engine=xelatex \
 	-H $(custom.latex) \
 	-o doc.pdf
