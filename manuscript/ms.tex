@@ -1,4 +1,4 @@
-\documentclass[letterpaper,12pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 \include{formatting}   % stick all of the LaTeX formatting into a separate file
 
@@ -37,7 +37,7 @@ $^{*}$\textbf{Corresponding Author}\\
 \vspace{2ex}
 Professor Paul Gribble\\
 The Brain and Mind Institute, Dept. Psychology\\
-1151 Richmond St, NSC Bldg Room 120\\
+1151 Richmond St, WIRB Bldg Room 3190\\
 London, Ontario, Canada N6A 5B7\\
 Phone: +1 519.661.2111 ext. 82237\\
 Fax: +1 519.661.3613\\
@@ -51,7 +51,7 @@ email: \url{paul@gribblelab.org}
 \textbf{Keywords}: blah; blah blah; blah blah blah\\
 
 \vspace{3ex}
-{\emph{\today, \currenttime}}
+\today, \currenttime
 
 \end{flushleft}
 
@@ -134,10 +134,11 @@ Council of Canada.
 %------------------------------------------------------------------------------
 
 \newpage
-\nolinenumbers
+%\nolinenumbers
 
-\bibliographystyle{jneurosci} 
-%\bibliographystyle{jneurophysiol}
+%\bibliographystyle{jneurosci} 
+\bibliographystyle{jneurophysiol}
+\renewcommand{\refname}{REFERENCES}
 \bibliography{refs}
 
 %------------------------------------------------------------------------------

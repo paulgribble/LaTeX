@@ -10,10 +10,10 @@
 
 \usepackage[scaled=0.92]{helvet}                       % load Helvetica font
 
-\usepackage{times}									   % Times font for main text
-\usepackage{txfonts}								   % Equations using Times-like font
+%\usepackage{times}									   % Times font for main text
+%\usepackage{txfonts}								   % Equations using Times-like font
 
-%\renewcommand*\familydefault{\sfdefault}              % Helvetica font for main text
+\renewcommand*\familydefault{\sfdefault}              % Helvetica font for main text
 
 % (or leave all font commands above commented out for LaTeX default, Computer Modern)
 
@@ -60,9 +60,9 @@
 \renewcommand{\maketitle}{
 \begin{flushleft}       % right align
 \vspace*{5mm}
-\MakeUppercase{\large\sffamily\bfseries\@title}   % increase the font size of the title
-\rule{\textwidth}{0.5pt}
-\vspace{5mm}\\         % vertical space between the title and author name
+\MakeUppercase{\Large\sffamily\bfseries\@title}   % increase the font size of the title
+%\rule{\textwidth}{0.5pt}
+\vspace{15mm}\\         % vertical space between the title and author name
 {\normalsize\sffamily\@author}        % author name
 \end{flushleft}
 }
