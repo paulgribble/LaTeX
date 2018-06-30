@@ -257,14 +257,14 @@ $else$
 $if(subparagraph)$
 $else$
 % Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
+% \ifx\paragraph\undefined\else
+% \let\oldparagraph\paragraph
+% \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+% \fi
+% \ifx\subparagraph\undefined\else
+% \let\oldsubparagraph\subparagraph
+% \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+% \fi
 $endif$
 $endif$
 $if(pagestyle)$
@@ -348,7 +348,7 @@ $endif$
 
 \makeatletter \renewcommand{\maketitle}{ \begin{flushleft} {\Large\textbf\@title} \vspace{3mm}\\ {\normalsize\@author} \\\@date \vspace{5mm} \end{flushleft} \thispagestyle{empty}} \makeatother
 
-% \usepackage[compact]{titlesec}
+\usepackage[compact]{titlesec}
 
 
 
