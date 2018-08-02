@@ -5,7 +5,7 @@
 % 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{BMI_letter}[2014/08/08 v0.01 Brain and Mind letterhead]
-\LoadClass[10pt,letterpaper]{article}
+\LoadClass[11pt,letterpaper]{article}
 
 % page margins and paragraph spacing
 \RequirePackage[letterpaper, top=1.8in, left=1.125in, right=1.125in, bottom=1.5in, headsep=0.597in, headheight=45.8523pt, footskip=0.675in]{geometry}
@@ -16,9 +16,12 @@
 
 % FONTS
 \RequirePackage{fontspec}
+\usepackage{textcomp}
 \RequirePackage{microtype}
-\setmainfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}\linespread{1.0833}
+
+%\setmainfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}\linespread{1.0833}
 %\setmainfont[BoldFont={SF UI Display Bold}]{SF UI Display}\linespread{1.0833}
+\setmainfont[BoldFont={* Bold}]{Equity Text B}\linespread{1.0833}
 \setsansfont[BoldFont={BentonSans Bold}]{BentonSans}
 \setmonofont{Monaco}
 
