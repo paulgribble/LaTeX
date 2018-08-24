@@ -6,7 +6,7 @@
 
 \recipient{$for(theRecipient)$$theRecipient$$sep$\\$endfor$}
 
-\vspace{3.0ex}
+\vspace{0.0ex}
 
 \regarding{$theRegarding$}
 
