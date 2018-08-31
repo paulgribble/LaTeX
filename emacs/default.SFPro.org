@@ -1,4 +1,5 @@
 #+LaTeX_CLASS_OPTIONS: [letterpaper,11pt] 
+#+LATEX_HEADER: \usepackage[utf8]{inputenc}
 #+LATEX_HEADER: \usepackage[T1]{fontenc}
 #+LATEX_HEADER: \usepackage{microtype}
 #+LATEX_HEADER: \usepackage{mathspec}
