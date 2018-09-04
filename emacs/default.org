@@ -3,8 +3,8 @@
 #+LATEX_HEADER: \usepackage{microtype}
 #+LATEX_HEADER: \usepackage{mathspec}
 #+LATEX_HEADER: \setmathfont(Latin,Greek){Palatino}
-#+LATEX_HEADER: \setmainfont[Ligatures=TeX,UprightFont={* Light}]{Helvetica}
-#+LATEX_HEADER: \setsansfont[BoldFont={* Bold}]{Helvetica}
+#+LATEX_HEADER: \setmainfont[Ligatures=TeX,UprightFont={* Light}]{Helvetica Neue}
+#+LATEX_HEADER: \setsansfont[BoldFont={* Bold}]{Helvetica Neue}
 #+LATEX_HEADER: \setmonofont[Scale=0.90]{Monaco}
 #+LATEX_HEADER: \usepackage[margin=1.0in,includefoot]{geometry}
 #+LATEX_HEADER: \linespread{1.05}
