@@ -22,7 +22,8 @@
 %\setmainfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}\linespread{1.0833}
 %\setmainfont[BoldFont={SF UI Display Bold}]{SF UI Display}\linespread{1.0833}
 %\setmainfont[BoldFont={* Bold}]{Equity Text B}\linespread{1.0833}
-\setmainfont[BoldFont={* Bold}]{Palatino}\linespread{1.05}
+%\setmainfont[BoldFont={* Bold}]{Palatino}\linespread{1.05}
+\setmainfont[BoldFont={* Bold}]{Adobe Caslon Pro}%\linespread{1.05}
 \setsansfont[BoldFont={BentonSans Bold}]{BentonSans}
 \setmonofont{Monaco}
 
@@ -42,7 +43,7 @@
 % BMI footer on page 1 or else just the page number
 \fancyfoot{}
 \fancyfoot[L]{\ifthenelse{\value{page}=1}
-  {\footnotesize\selectfont\sffamily\setstretch{1.2}\textbf{Brain and Mind Institute, Western University}, Western Interdisciplinary Research Building, Rm 3190\\1151 Richmond St. N., London, ON, Canada N6A 5B7
+  {\scriptsize\selectfont\sffamily\setstretch{1.2}\textbf{Brain and Mind Institute, Western University}, Western Interdisciplinary Research Building, Rm 3190\\1151 Richmond St. N., London, ON, Canada N6A 5B7
     | t. 519.661.2111 ext. 86057 | www.uwo.ca/bmi}
   {\thepage} }
 \renewcommand{\footrulewidth}{0.0pt}
@@ -71,7 +72,7 @@
 
 \newcommand{\regarding}[1]{
 	\noindent
-	\textbf{Re: #1}
+	Re: #1
 	\vspace{2.0ex}
 }
 
@@ -93,7 +94,7 @@
 	\vspace{1.0ex}
 
 	\noindent
-	\textbf{Paul L. Gribble, Ph.D.}\\
+	Paul L. Gribble, Ph.D.\\
 	Professor\\
 	Brain and Mind Institute, Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
@@ -108,7 +109,7 @@
 	\vspace{25mm}
 
 	\noindent
-	\textbf{Paul L. Gribble, Ph.D.}\\
+	Paul L. Gribble, Ph.D.\\
 	Professor\\
 	Brain and Mind Institute, Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
