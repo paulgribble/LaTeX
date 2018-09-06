@@ -1,26 +1,24 @@
-#+LaTeX_CLASS_OPTIONS: [letterpaper,11pt] 
+#+LaTeX_CLASS_OPTIONS: [letterpaper,12pt] 
 #+LATEX_HEADER: \usepackage[T1]{fontenc}
 #+LATEX_HEADER: \usepackage{microtype}
 #+LATEX_HEADER: \usepackage{mathspec}
 #+LATEX_HEADER: \setmathfont(Latin,Greek){Palatino}
-#+LATEX_HEADER: \setmainfont[Ligatures=TeX,UprightFont={* Light}]{Helvetica Neue}
-#+LATEX_HEADER: \setsansfont[BoldFont={* Bold}]{Helvetica Neue}
+#+LATEX_HEADER: \setmainfont{Adobe Caslon Pro}
+#+LATEX_HEADER: \setsansfont{Helvetica Neue}
 #+LATEX_HEADER: \setmonofont[Scale=0.90]{Monaco}
 #+LATEX_HEADER: \usepackage[margin=1.0in,includefoot]{geometry}
 #+LATEX_HEADER: \linespread{1.05}
 #+LATEX_HEADER: \setlength{\parskip}{1.0em}
 #+LATEX_HEADER: \setlength{\parindent}{0em}
 #+LATEX_HEADER: \usepackage[compact]{titlesec}
-#+LATEX_HEADER: \titleformat*{\section}{\sffamily\large\bfseries}
-#+LATEX_HEADER: \titlespacing{\section}{0pt}{2ex}{0ex}
-#+LATEX_HEADER: \titleformat*{\subsection}{\sffamily\normalsize\bfseries}
-#+LATEX_HEADER: \titlespacing{\subsection}{0pt}{1ex}{0ex}
-#+LATEX_HEADER: \titleformat*{\subsubsection}{\normalsize\sffamily}
-#+LATEX_HEADER: \titlespacing{\subsubsection}{0pt}{0ex}{0ex}
-#+LATEX_HEADER: \newfontfamily\enumfont{Helvetica Neue}[UprightFont={* Light},Numbers ={Monospaced}]
+#+LATEX_HEADER: \titleformat*{\section}{\large\bfseries}
+#+LATEX_HEADER: \titleformat*{\subsection}{\normalsize\bfseries}
+#+LATEX_HEADER: \titleformat*{\subsubsection}{\normalsize}
 #+LATEX_HEADER: \usepackage{enumitem}
 #+LATEX_HEADER: \setlist[itemize]{noitemsep, parsep=0.0em, topsep=0.0em, leftmargin=*}
-#+LATEX_HEADER: \setlist[enumerate]{font=\enumfont, noitemsep, parsep=0.0em, topsep=0.0em, leftmargin=*}
-#+LATEX_HEADER: \makeatletter \renewcommand{\maketitle}{ \begin{flushleft} {\sffamily\Large\textbf\@title} \vspace{3mm}\\ {\normalsize\@author} \\\@date \vspace{5mm} \end{flushleft} \thispagestyle{empty}}
+#+LATEX_HEADER: \setlist[enumerate]{noitemsep, parsep=0.0em, topsep=0.0em, leftmargin=*}
+#+LATEX_HEADER: \makeatletter \renewcommand{\maketitle}{ \begin{flushleft} {\Large\textbf\@title} \vspace{3mm}\\ {\normalsize\@author} \\\@date \vspace{5mm} \end{flushleft} \thispagestyle{empty}}
 #+LATEX_HEADER: \hypersetup{breaklinks=true,colorlinks=true,urlcolor=blue}
 #+LATEX_HEADER: \urlstyle{rm}
+#+LATEX_HEADER: \usepackage{ragged2e}
+#+LATEX_HEADER: \raggedright
