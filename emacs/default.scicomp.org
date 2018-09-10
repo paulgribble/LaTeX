@@ -17,7 +17,7 @@
 #+LATEX_HEADER: \usepackage{enumitem}
 #+LATEX_HEADER: \setlist[itemize]{noitemsep,nolistsep,label={\raisebox{-4pt}{\LARGE\textbullet}}}
 #+LATEX_HEADER: \setlist[enumerate]{noitemsep,nolistsep}
-#+LATEX_HEADER: \makeatletter \renewcommand{\maketitle}{\begin{raggedright} {\LARGE\textbf\@title} \vspace{3mm}\\ {\@author}\\ {\@date}\\ \vspace{5mm} \end{raggedright}}
+#+LATEX_HEADER: \makeatletter \renewcommand{\maketitle}{\begin{raggedright} {\LARGE\textbf\@title} \vspace{3mm}\\ {\@author}\\ {\@date}\\ \vspace{20mm} \end{raggedright}}
 #+LATEX_HEADER: \hypersetup{breaklinks=true,colorlinks=true,urlcolor=blue}
 #+LATEX_HEADER: \urlstyle{rm}
 #+LATEX_HEADER: \raggedright
