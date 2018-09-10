@@ -1,6 +1,5 @@
 #+LaTeX_CLASS_OPTIONS: [letterpaper,10pt] 
 #+LATEX_HEADER: \usepackage[T1]{fontenc}
-#+LATEX_HEADER: \usepackage{microtype}
 #+LATEX_HEADER: \usepackage{mathspec}
 #+LATEX_HEADER: \setmathfont(Latin,Greek){Palatino}
 #+LATEX_HEADER: \setmainfont[Ligatures=TeX,UprightFont={* Regular}]{Libre Franklin}
@@ -22,3 +21,9 @@
 #+LATEX_HEADER: \hypersetup{breaklinks=true,colorlinks=true,urlcolor=blue}
 #+LATEX_HEADER: \urlstyle{rm}
 #+LATEX_HEADER: \raggedright
+#+LATEX_HEADER: \usepackage{listings}
+#+LATEX_HEADER: \usepackage[usenames,dvipsnames]{color}
+#+LATEX_HEADER: \definecolor{light-gray}{gray}{0.950}
+#+LATEX_HEADER: \lstloadlanguages{Matlab}
+#+LATEX_HEADER: \lstset{language=Matlab,frame=none,basicstyle=\small\ttfamily,backgroundcolor=\color{lightt-gray},showstringspaces=false,tabsize=4,aboveskip=12pt,belowskip=12pt}
+
