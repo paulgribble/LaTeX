@@ -1,10 +1,10 @@
-#+LaTeX_CLASS_OPTIONS: [letterpaper,10pt] 
+#+LaTeX_CLASS_OPTIONS: [letterpaper,11pt] 
 #+LATEX_HEADER: \usepackage[T1]{fontenc}
 #+LATEX_HEADER: \usepackage{mathspec}
 #+LATEX_HEADER: \setmathfont(Latin,Greek){Palatino}
-#+LATEX_HEADER: \setmainfont[Ligatures=TeX,UprightFont={* Regular}]{Libre Franklin}
-#+LATEX_HEADER: \setsansfont[BoldFont={* Bold}]{Libre Franklin}
-#+LATEX_HEADER: \setmonofont[Scale=0.90]{Monaco}
+#+LATEX_HEADER: \setmainfont{Helvetica Neue}
+#+LATEX_HEADER: \setsansfont{Helvetica Neue}
+#+LATEX_HEADER: \setmonofont[Scale=0.85]{Monaco}
 #+LATEX_HEADER: \usepackage[margin=1.0in,includefoot]{geometry}
 #+LATEX_HEADER: \linespread{1.05}
 #+LATEX_HEADER: \setlength{\parskip}{1.0em}
