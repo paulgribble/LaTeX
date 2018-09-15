@@ -67,7 +67,7 @@
 \newcommand{\recipient}[1]{
 	\noindent
 	#1
-	\vspace{2.0ex}
+	\vspace{8.0ex}
 }
 
 \newcommand{\regarding}[1]{
