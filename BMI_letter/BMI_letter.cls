@@ -5,7 +5,7 @@
 % 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{BMI_letter}[2014/08/08 v0.01 Brain and Mind letterhead]
-\LoadClass[11pt,letterpaper]{article}
+\LoadClass[12pt,letterpaper]{article}
 
 % page margins and paragraph spacing
 \RequirePackage[letterpaper, top=1.8in, left=1.125in, right=1.125in, bottom=1.5in, headsep=0.597in, headheight=45.8523pt, footskip=0.675in]{geometry}
@@ -98,7 +98,7 @@
 	Professor\\
 	Brain and Mind Institute, Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
-	Western University Canada\\
+%	Western University Canada\\
 	{paul@gribblelab.org $\vert$ www.gribblelab.org}
 }
 
@@ -113,7 +113,7 @@
 	Professor\\
 	Brain and Mind Institute, Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
-	Western University Canada\\
+%	Western University Canada\\
 	{paul@gribblelab.org $\vert$ www.gribblelab.org}
 }
 
