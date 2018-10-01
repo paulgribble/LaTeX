@@ -1,7 +1,7 @@
-#+STARTUP: showall
 #+TITLE: Richard III
 #+AUTHOR: William Shakespeare
 #+DATE: \today
+#+STARTUP: showall
 #+OPTIONS: toc:nil num:0 email:nil ':t
 #+SETUPFILE: /Users/plg/github/LaTeX/emacs/default.org
 
