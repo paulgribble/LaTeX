@@ -2,7 +2,7 @@
 #+AUTHOR: William Shakespeare
 #+DATE: \today
 #+STARTUP: showall
-#+OPTIONS: toc:nil num:0 email:nil ':t
+#+OPTIONS: toc:nil num:0 ':t
 #+SETUPFILE: /Users/plg/github/LaTeX/emacs/default.org
 
 * from Richard III, spoken by Gloucester
