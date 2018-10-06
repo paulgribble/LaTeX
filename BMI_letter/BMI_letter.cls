@@ -17,7 +17,7 @@
 % FONTS
 \RequirePackage{fontspec}
 \usepackage{textcomp}
-\RequirePackage{microtype}
+%\RequirePackage{microtype}
 
 %\setmainfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}\linespread{1.0833}
 %\setmainfont[BoldFont={SF UI Display Bold}]{SF UI Display}\linespread{1.0833}
