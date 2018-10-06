@@ -5,7 +5,7 @@
 % 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{BMI_letter}[2014/08/08 v0.01 Brain and Mind letterhead]
-\LoadClass[12pt,letterpaper]{article}
+\LoadClass[11pt,letterpaper]{article}
 
 % page margins and paragraph spacing
 \RequirePackage[letterpaper, top=1.8in, left=1.125in, right=1.125in, bottom=1.5in, headsep=0.597in, headheight=46.1223pt, footskip=0.675in]{geometry}
@@ -22,8 +22,8 @@
 %\setmainfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}\linespread{1.0833}
 %\setmainfont[BoldFont={SF UI Display Bold}]{SF UI Display}\linespread{1.0833}
 %\setmainfont[BoldFont={* Bold}]{Equity Text B}\linespread{1.0833}
-%\setmainfont[BoldFont={* Bold}]{Palatino}\linespread{1.05}
-\setmainfont[BoldFont={* Bold}]{Adobe Caslon Pro}%\linespread{1.05}
+\setmainfont[BoldFont={* Bold}]{Palatino}\linespread{1.05}
+%\setmainfont[BoldFont={* Bold}]{Adobe Caslon Pro}%\linespread{1.05}
 \setsansfont[BoldFont={BentonSans Bold}]{BentonSans}
 \setmonofont{Monaco}
 
