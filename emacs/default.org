@@ -22,3 +22,5 @@
 #+LATEX_HEADER: \urlstyle{rm}
 #+LATEX_HEADER: \usepackage{ragged2e}
 #+LATEX_HEADER: \raggedright
+#+LATEX_HEADER: \usepackage{tocloft} \setlength\cftparskip{-2pt}
+#+LATEX_HEADER: \usepackage[bottom]{footmisc} \setlength{\skip\footins}{10mm}
