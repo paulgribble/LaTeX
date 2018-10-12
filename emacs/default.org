@@ -15,8 +15,8 @@
 #+LATEX_HEADER: \titleformat*{\subsection}{\normalsize\bfseries}
 #+LATEX_HEADER: \titleformat*{\subsubsection}{\normalsize}
 #+LATEX_HEADER: \usepackage{enumitem}
-#+LATEX_HEADER: \setlist[itemize]{noitemsep, parsep=0.0em, topsep=0.0em, leftmargin=*}
-#+LATEX_HEADER: \setlist[enumerate]{noitemsep, parsep=0.0em, topsep=0.0em, leftmargin=*}
+#+LATEX_HEADER: \setlist[itemize]{noitemsep, parsep=0.5em, topsep=0.0em, leftmargin=*}
+#+LATEX_HEADER: \setlist[enumerate]{noitemsep, parsep=0.5em, topsep=0.0em, leftmargin=*}
 #+LATEX_HEADER: \makeatletter \renewcommand{\maketitle}{ \begin{flushleft} {\Large\textbf\@title} \vspace{3mm}\\ {\normalsize\@author} \\\@date \vspace{5mm} \end{flushleft} \thispagestyle{empty}}
 #+LATEX_HEADER: \hypersetup{breaklinks=true,colorlinks=true,urlcolor=blue}
 #+LATEX_HEADER: \urlstyle{rm}
