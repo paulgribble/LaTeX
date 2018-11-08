@@ -3,7 +3,7 @@
 #+DATE: \today
 #+STARTUP: showall
 #+OPTIONS: toc:nil num:0 ':t
-#+SETUPFILE: /Users/plg/github/LaTeX/emacs/default.org
+#+SETUPFILE: /Users/plg/github/LaTeX/emacs/default_latex.org
 
 * from Richard III, spoken by Gloucester
 
