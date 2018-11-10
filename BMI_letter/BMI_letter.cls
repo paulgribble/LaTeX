@@ -17,13 +17,14 @@
 % FONTS
 \RequirePackage{fontspec}
 \usepackage{textcomp}
-%\RequirePackage{microtype}
+\RequirePackage{microtype}
 
 %\setmainfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}\linespread{1.0833}
 %\setmainfont[BoldFont={SF UI Display Bold}]{SF UI Display}\linespread{1.0833}
 %\setmainfont[BoldFont={* Bold}]{Equity Text B}\linespread{1.0833}
-\setmainfont[BoldFont={* Bold}]{Palatino}\linespread{1.05}
+%\setmainfont[BoldFont={* Bold}]{Palatino}\linespread{1.05}
 %\setmainfont[BoldFont={* Bold}]{Adobe Caslon Pro}%\linespread{1.05}
+
 \setsansfont[BoldFont={BentonSans Bold}]{BentonSans}
 \setmonofont{Monaco}
 
@@ -96,7 +97,8 @@
 	\noindent
 	Paul L. Gribble, Ph.D.\\
 	Professor\\
-	Brain and Mind Institute, Dept. Psychology\\
+	Brain and Mind Institute\\
+	Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
 %	Western University Canada\\
 	{paul@gribblelab.org $\vert$ www.gribblelab.org}
@@ -111,7 +113,8 @@
 	\noindent
 	Paul L. Gribble, Ph.D.\\
 	Professor\\
-	Brain and Mind Institute, Dept. Psychology\\
+	Brain and Mind Institute\\
+	Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
 %	Western University Canada\\
 	{paul@gribblelab.org $\vert$ www.gribblelab.org}

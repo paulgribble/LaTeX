@@ -6,7 +6,7 @@ texengine = xelatex
 
 all:	letter_latex letter_md
 
-letter_latex:	letter_latex.tex BMI_letter.cls
+letter_latex:	letter_latex.tex $(BMI_letter.cls)
 	$(texengine) letter_latex.tex
 	while ($(texengine) letter_latex.tex ; \
 		grep -q "Rerun to get" letter_latex.log ) do true ; \
