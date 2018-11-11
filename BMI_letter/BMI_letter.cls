@@ -73,7 +73,7 @@
 
 \newcommand{\regarding}[1]{
 	\noindent
-	Re: #1
+	{\textbf{Re: #1}}
 	\vspace{2.0ex}
 }
 
