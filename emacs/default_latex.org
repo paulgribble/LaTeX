@@ -4,7 +4,7 @@
 #+LATEX_HEADER: \usepackage{microtype}
 #+LATEX_HEADER: \usepackage{mathspec}
 #+LATEX_HEADER: \setmonofont[Scale=0.90]{Monaco}
-#+LATEX_HEADER: \usepackage[margin=1.0in,includefoot]{geometry}
+#+LATEX_HEADER: \usepackage[margin=0.75in,includefoot]{geometry}
 #+LATEX_HEADER: \setlength{\parskip}{1.0em}
 #+LATEX_HEADER: \setlength{\parindent}{0em}
 #+LATEX_HEADER: \usepackage[compact]{titlesec}
