@@ -18,6 +18,8 @@
 #+LATEX_HEADER: \setlist[itemize]{noitemsep,nolistsep,label={\raisebox{-4pt}{\LARGE\textbullet}}}
 #+LATEX_HEADER: \setlist[enumerate]{noitemsep,nolistsep}
 #+LATEX_HEADER: \makeatletter \renewcommand{\maketitle}{\begin{raggedright} {\LARGE\textbf\@title} \vspace{3mm}\\ {\@author}\\ {\@date}\\ \vspace{20mm} \end{raggedright}}
+#+LATEX_HEADER: \usepackage{graphicx}
+#+LATEX_HEADER: \usepackage{hyperref}
 #+LATEX_HEADER: \hypersetup{breaklinks=true,colorlinks=true,urlcolor=blue}
 #+LATEX_HEADER: \urlstyle{rm}
 #+LATEX_HEADER: \raggedright
@@ -25,5 +27,5 @@
 #+LATEX_HEADER: \usepackage[usenames,dvipsnames]{color}
 #+LATEX_HEADER: \definecolor{light-gray}{gray}{0.950}
 #+LATEX_HEADER: \lstloadlanguages{Matlab}
-#+LATEX_HEADER: \lstset{language=Matlab,frame=none,basicstyle=\small\ttfamily,backgroundcolor=\color{lightt-gray},showstringspaces=false,tabsize=4,aboveskip=12pt,belowskip=12pt}
+#+LATEX_HEADER: \lstset{language=Matlab,frame=none,basicstyle=\small\ttfamily,backgroundcolor=\color{light-gray},showstringspaces=false,tabsize=4,aboveskip=12pt,belowskip=12pt}
 
