@@ -28,7 +28,7 @@
 %\setmainfont[BoldFont={* Bold}]{Adobe Caslon Pro}%\linespread{1.05}
 
 \setsansfont[BoldFont={BentonSans Bold}]{BentonSans}
-\setmonofont{Monaco}
+\setmonofont[Scale=0.80]{Monaco}
 
 \RequirePackage{graphicx}
 \RequirePackage{ifthen}
