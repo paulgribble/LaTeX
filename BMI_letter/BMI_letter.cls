@@ -57,6 +57,10 @@
 
 % for clickable URLs
 \RequirePackage[colorlinks]{hyperref}
+\hypersetup{
+  urlcolor=blue
+}
+
 
 % activate the fancy headers and footers
 \thispagestyle{fancy}
