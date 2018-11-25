@@ -21,7 +21,7 @@
 \RequirePackage{microtype}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{mathpazo}
-\RequirePackage[scaled=0.92]{helvet}
+\RequirePackage[scaled]{helvet}
 
 %\setmainfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}\linespread{1.0833}
 %\setmainfont[BoldFont={SF UI Display Bold}]{SF UI Display}\linespread{1.0833}
@@ -47,7 +47,7 @@
 % BMI footer on page 1 or else just the page number
 \fancyfoot{}
 \fancyfoot[L]{\ifthenelse{\value{page}=1}
-  {\footnotesize\selectfont\sffamily\textbf{Brain and Mind Institute, Western University}, Western Interdisciplinary Research Building, Rm 3190\\1151 Richmond St. N., London, ON, Canada N6A 5B7
+  {\footnotesize\selectfont\sffamily\textbf{Brain and Mind Institute, Western University}, Western Interdisciplinary Research Building, Rm 3190\\1151 Richmond St. N., London, ON, Canada N6A 3K7
     | t. 519.661.2111 ext. 86057 | www.uwo.ca/bmi}
   {\thepage} }
 \renewcommand{\footrulewidth}{0.0pt}
