@@ -20,7 +20,7 @@
 \RequirePackage{textcomp}
 \RequirePackage{microtype}
 \RequirePackage[T1]{fontenc}
-\RequirePackage{mathpazo}
+\RequirePackage{mathpazo}\linespread{1.05}
 \RequirePackage[scaled]{helvet}
 
 %\setmainfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}\linespread{1.0833}
