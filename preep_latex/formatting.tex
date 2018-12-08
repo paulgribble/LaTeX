@@ -1,0 +1,67 @@
+% Page Setup
+\usepackage[letterpaper, margin=1.0in]{geometry}
+\setlength{\headheight}{13.59999pt}
+\usepackage{fancyhdr}				% header and footer controls
+
+% Typography
+\usepackage{mathpazo}				% for Palatino serif font
+\usepackage{microtype}				% Better typography
+\usepackage[T1]{fontenc}			% Better typography
+\linespread{1.05}					% needed for Palatino, trust me
+\usepackage{mathtools}				% makes equations better
+\usepackage[english]{babel}			% hyphenation etc for English
+
+% Figures
+\usepackage{graphicx}				% for importing graphics into figures
+\usepackage{float}					% better control of figure placement
+\usepackage[labelfont=bf]{caption}	% make caption labels boldface
+
+% Citations & Bibliography
+\usepackage{natbib}					% for our chosen bibliography style
+
+% Authors and Affiliations
+\usepackage{authblk}				% authors and affiliations
+\renewcommand*{\Authfont}{\normalsize}
+\renewcommand*{\Affilfont}{\footnotesize}	% smaller font for author affiliations
+
+% Miscellaneous
+\usepackage{lipsum}					% for filler text
+\usepackage{hologo}					% for nice LaTeX logo
+
+% Page Headers and Footers
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small\thepage}
+\newcommand\shorttitle[1]{\def\@shorttitle{#1}} % running head
+\lhead{\itshape\@shorttitle}
+
+\fancypagestyle{firstpage}{%
+  \renewcommand{\headrulewidth}{0pt}
+  \lhead{}
+  \rhead{\itshape\small\today}
+}
+
+% Customize Section Headings
+\usepackage[compact]{titlesec}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsubsection}{\normalsize\itshape}
+
+% Customize the Title & Authors
+\makeatletter
+\renewcommand{\maketitle}{
+{\LARGE\noindent\ignorespaces\bfseries\@title\par}
+\vspace{5mm}
+{\noindent\ignorespaces\@author\par}
+\vspace{2mm}
+}
+\makeatother
+
+% Customize the Abstract
+\renewenvironment{abstract}
+ {\small
+  \begin{center}
+  {\normalsize\bfseries \abstractname}\vspace{-.5em}\vspace{0pt}
+  \end{center}
+}
+

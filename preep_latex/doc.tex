@@ -1,0 +1,71 @@
+\documentclass[twocolumn]{article}
+
+\include{formatting} % where the magic happens
+
+
+\begin{document}
+
+\title{A Preprint Template in \Hologo{LaTeX}}
+\shorttitle{Preprint Template}
+
+\author[1,2,3,5,*]{Paul L. Gribble}
+\author[1,2,4]{Ford Prefect}
+
+\affil[1]{ The Brain and Mind Institute, Western University, London ON, Canada N6A 3K7}
+\affil[2]{ Deptartment of Psychology, Western University, London ON, Canada N6A 3K7}
+\affil[3]{ Department of Physiology \& Pharmacology, Western University, London ON, Canada N6A 3K7}
+\affil[4]{ Graduate Program in Neuroscience, Western University, London ON, Canada N6A 3K7}
+\affil[5]{ Haskins Laboratories, New Haven CT, USA 06511}
+\affil[*]{ Corresponding Author: paul@gribblelab.org}
+
+
+\thispagestyle{firstpage}
+% generate the title, authors & affiliations, and date
+\twocolumn[  
+	\begin{@twocolumnfalse}
+
+		\maketitle
+
+		\begin{abstract}
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim rutrum.
+		\end{abstract}
+
+		\vspace{1.0ex}
+		{\noindent\bfseries\small Keywords}: human, motor learning, somatosensory cortex
+		\vspace{4.0ex}
+
+	\end{@twocolumnfalse}
+]
+
+
+
+\section*{Introduction}
+\lipsum[2-4] Here is a citation \citep{Mattar:2005}.
+
+
+\section*{Methods}
+
+\subsection*{Participants}
+\lipsum[6]
+
+\subsection*{Procedure}
+\lipsum[7-8]
+
+
+\section*{Results}
+\lipsum[9-11]
+
+
+\section*{Discussion}
+\lipsum[12-14]
+
+
+\bibliographystyle{jneurophysiol}
+\bibliography{refs}
+
+
+\end{document}
+
+
+
+
