@@ -19,7 +19,5 @@
 #+LATEX_HEADER: \setlist[enumerate]{noitemsep, parsep=0.0em, topsep=0.0em, leftmargin=*}
 #+LATEX_HEADER: \makeatletter \renewcommand{\maketitle}{ \begin{flushleft} {\Large\textbf\@title} \vspace{3mm}\\ {\normalsize\@author} \\\@date \vspace{5mm} \end{flushleft} \thispagestyle{empty}}
 #+LATEX_HEADER: \hypersetup{breaklinks=true,colorlinks=true,urlcolor=blue,urlstyle=tt,}
-#+LATEX_HEADER: \usepackage{relsize}
-#+LATEX_HEADER: \renewcommand*{\UrlFont}{\ttfamily\smaller\relax}
 #+LATEX_HEADER: \usepackage{ragged2e}
 #+LATEX_HEADER: \raggedright
