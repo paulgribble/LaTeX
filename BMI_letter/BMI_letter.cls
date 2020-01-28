@@ -1,7 +1,7 @@
 % A \documentclass for the Brain and Mind letterhead
 % 
 % Paul Gribble
-% paul@gribblelab.org
+% pgribble@uwo.ca
 % 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{BMI_letter}[2014/08/08 v0.01 Brain and Mind letterhead]
@@ -108,7 +108,7 @@
 	Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
 %	Western University Canada\\
-	{paul@gribblelab.org $\vert$ www.gribblelab.org}
+	{pgribble@uwo.ca $\vert$ www.gribblelab.org}
 }
 
 \newcommand{\closingnosig}[1]{
@@ -124,7 +124,7 @@
 	Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
 %	Western University Canada\\
-	{paul@gribblelab.org $\vert$ www.gribblelab.org}
+	{pgribble@uwo.ca $\vert$ www.gribblelab.org}
 }
 
 
