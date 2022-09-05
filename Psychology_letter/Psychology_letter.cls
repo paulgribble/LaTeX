@@ -16,20 +16,28 @@
 
 % FONTS
 %\RequirePackage{lmodern}
-\RequirePackage{fontspec}
+%\RequirePackage{fontspec}
+
+%\RequirePackage{mathptmx}
+\RequirePackage[scaled]{helvet}
+
+%\RequirePackage[cmintegrals,cmbraces]{newtxmath}
+%\RequirePackage{ebgaramond-maths}
+
+\RequirePackage{mathpazo}\linespread{1.05}
+
 \RequirePackage{textcomp}
 \RequirePackage{microtype}
 \RequirePackage[T1]{fontenc}
-%\RequirePackage{mathpazo}\linespread{1.05}
-%\RequirePackage[scaled]{helvet}
+
 
 %\setmainfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}\linespread{1.0833}
 %\setmainfont[BoldFont={SF UI Display Bold}]{SF UI Display}\linespread{1.0833}
 %\setmainfont[BoldFont={* Bold}]{Equity Text B}\linespread{1.0833}
-\setmainfont[BoldFont={* Bold}]{Palatino}\linespread{1.05}
+%\setmainfont[BoldFont={* Bold}]{Palatino}\linespread{1.05}
 %\setmainfont[BoldFont={* Bold}]{Adobe Caslon Pro}%\linespread{1.05}
-\setsansfont[BoldFont={BentonSans Medium}]{BentonSans}
-\setmonofont[Scale=0.80]{Monaco}
+%\setsansfont[BoldFont={BentonSans Medium}]{BentonSans}
+%\setmonofont[Scale=0.80]{Monaco}
 
 \RequirePackage{graphicx}
 \RequirePackage{ifthen}
@@ -96,7 +104,7 @@
 
 \newcommand{\thedate}[1]{
         \noindent
-        \@date
+        #1
 	\vspace{1.0ex}
 }
 
@@ -136,7 +144,7 @@
 	Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
 %	Western University Canada\\
-	{pgribble@uwo.ca $\vert$ www.gribblelab.org}
+	{pgribble@uwo.ca $\bigcdot$ www.gribblelab.org}
 }
 
 \newcommand{\closingnosig}[1]{
@@ -151,7 +159,7 @@
 	Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
 %	Western University Canada\\
-	{pgribble@uwo.ca $\vert$ www.gribblelab.org}
+	{pgribble@uwo.ca $\bigcdot$ www.gribblelab.org}
 }
 
 
