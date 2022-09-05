@@ -140,7 +140,6 @@
 	\noindent
 	Paul L. Gribble, Ph.D.\\
 	Professor\\
-	Brain and Mind Institute\\
 	Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
 %	Western University Canada\\
