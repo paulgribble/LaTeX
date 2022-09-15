@@ -24,7 +24,9 @@
 %\RequirePackage[cmintegrals,cmbraces]{newtxmath}
 %\RequirePackage{ebgaramond-maths}
 
-\RequirePackage{mathpazo}\linespread{1.05}
+\RequirePackage{tgpagella}
+
+%\RequirePackage{mathpazo}\linespread{1.05}
 
 \RequirePackage{textcomp}
 \RequirePackage{microtype}
