@@ -5,7 +5,7 @@
 % 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{Psychology_letter}[2022/09/04 v0.01 Psychology letterhead]
-\LoadClass[11pt,letterpaper]{article}
+\LoadClass[10pt,letterpaper]{article}
 
 % page margins and paragraph spacing
 \RequirePackage[letterpaper, top=1.8in, left=1.125in, right=1.125in, bottom=1.5in, headsep=0.597in, headheight=49.93233pt, footskip=14.08003pt]{geometry}
@@ -24,9 +24,7 @@
 %\RequirePackage[cmintegrals,cmbraces]{newtxmath}
 %\RequirePackage{ebgaramond-maths}
 
-\RequirePackage{tgpagella}
-
-%\RequirePackage{mathpazo}\linespread{1.05}
+\RequirePackage{mathpazo}\linespread{1.05}
 
 \RequirePackage{textcomp}
 \RequirePackage{microtype}
