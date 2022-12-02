@@ -8,14 +8,10 @@ ln -s /Users/plg/github/LaTeX/Psychology_letter/SSC_Stacked_CMYK.pdf /Users/plg/
 
 ln -s /Users/plg/Documents/Home/signature.jpg /Users/plg/Library/texmf/tex/latex/local/signature.jpg
 
+
 for urw-garamond font:
 
-curl --remote-name https://tug.org/fonts/getnonfreefonts/install-getnonfreefonts
+wget http://tug.org/fonts/getnonfreefonts/install-getnonfreefonts
 sudo texlua install-getnonfreefonts
-sudo -H mktexlsr
 sudo getnonfreefonts -a --sys
-sudo -H mktexlsr
-
-???
-sudo -H updmap-sys --force --enable Map=newfont.map
-
+updmap -sys

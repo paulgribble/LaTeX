@@ -11,6 +11,6 @@ to install some non-free fonts:
 ```bash
   wget http://tug.org/fonts/getnonfreefonts/install-getnonfreefonts
   sudo texlua install-getnonfreefonts
-  sudo getnonfreefonts -a
-  updmap
+  sudo getnonfreefonts -a --sys
+  updmap -sys
 ```
