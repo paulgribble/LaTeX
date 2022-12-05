@@ -14,31 +14,35 @@
 
 \RequirePackage{setspace}
 
+
 % FONTS
-%\RequirePackage{lmodern}
-%\RequirePackage{fontspec}
 
-%\RequirePackage{mathptmx}
-\RequirePackage[scaled]{helvet}
+% base latex
+%
+%\RequirePackage[scaled]{helvet}
+%\RequirePackage[garamond]{mathdesign}\linespread{1.05}
+%\RequirePackage{textcomp}
+%\RequirePackage{microtype}
+%\RequirePackage[T1]{fontenc}
 
-%\RequirePackage[cmintegrals,cmbraces]{newtxmath}
-%\RequirePackage{ebgaramond-maths}
+% fontspec
+%
+\RequirePackage{fontspec}
+\setmainfont
+    [Ligatures=TeX,
+      BoldFont={* Bold}]
+    {Adobe Garamond Pro}\linespread{1.05}
 
-%\RequirePackage{mathpazo}\linespread{1.05}
-\RequirePackage[garamond]{mathdesign}\linespread{1.05}
+\setsansfont
+    [Ligatures=TeX,
+      UprightFont={* Regular},
+      BoldFont={* Medium},
+      Scale=0.83]
+    {BentonSans}
 
-\RequirePackage{textcomp}
-\RequirePackage{microtype}
-\RequirePackage[T1]{fontenc}
+\setmonofont[Scale=0.80]{Monaco}
 
 
-%\setmainfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}\linespread{1.0833}
-%\setmainfont[BoldFont={SF UI Display Bold}]{SF UI Display}\linespread{1.0833}
-%\setmainfont[BoldFont={* Bold}]{Equity Text B}\linespread{1.0833}
-%\setmainfont[BoldFont={* Bold}]{Palatino}\linespread{1.05}
-%\setmainfont[BoldFont={* Bold}]{Adobe Caslon Pro}%\linespread{1.05}
-%\setsansfont[BoldFont={BentonSans Medium}]{BentonSans}
-%\setmonofont[Scale=0.80]{Monaco}
 
 \RequirePackage{graphicx}
 \RequirePackage{ifthen}
