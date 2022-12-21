@@ -1,8 +1,8 @@
 #+OPTIONS: toc:nil num:nil email:nil ':t
-#+LATEX_CLASS_OPTIONS: [11pt,letterpaper]
+#+LATEX_CLASS_OPTIONS: [12pt,letterpaper]
 #+LATEX_HEADER: \usepackage{fontspec}
 #+LATEX_HEADER: \setmainfont[Ligatures=TeX,BoldFont={* Bold}]{Adobe Garamond Pro}\linespread{1.05}
-#+LATEX_HEADER: \setsansfont[Ligatures=TeX,UprightFont={* Regular},BoldFont={* Medium},Scale=0.83]{BentonSans}
+#+LATEX_HEADER: \setsansfont[Ligatures=TeX,BoldFont={* Medium}]{BentonSans}
 #+LATEX_HEADER: \setmonofont[Scale=0.80]{Monaco}
 #+LATEX_HEADER: \usepackage[margin=1.2in]{geometry}
 #+LATEX_HEADER: \setlength{\parskip}{2ex}
@@ -14,4 +14,4 @@
 #+LATEX_HEADER: \titleformat*{\section}{\normalsize\bfseries}
 #+LATEX_HEADER: \titlespacing{\subsection}{0pt}{0ex}{0ex}
 #+LATEX_HEADER: \titleformat*{\subsection}{\normalsize}
-#+LATEX_HEADER: \makeatletter \renewcommand{\maketitle}{\begin{flushleft} {\large\textbf{\@title}}\\{\normalsize\@author}\\{\small\@date}\end{flushleft}}
+#+LATEX_HEADER: \makeatletter \renewcommand{\maketitle}{\begin{flushleft} {\Large\textbf{\@title}}\\\vspace{.5em}{\normalsize\@author}\\{\small\@date}\end{flushleft}\vspace{1em}}
