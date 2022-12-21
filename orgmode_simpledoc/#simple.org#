@@ -1,0 +1,13 @@
+#+STARTUP: showall
+#+TITLE: A Simple Document
+#+AUTHOR: Ford Prefect
+#+DATE: \today
+#+SETUPFILE: preamble.org
+
+* Introduction
+
+\lipsum[1]
+
+** A Subsection
+
+\lipsum[1-2]
