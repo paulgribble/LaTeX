@@ -1,9 +1,7 @@
 #+OPTIONS: toc:nil num:nil email:nil ':t
-#+LATEX_CLASS_OPTIONS: [12pt,letterpaper]
-#+LATEX_HEADER: \usepackage{fontspec}
-#+LATEX_HEADER: \setmainfont[Ligatures=TeX,BoldFont={* Bold}]{Adobe Garamond Pro}\linespread{1.05}
-#+LATEX_HEADER: \setsansfont[Ligatures=TeX,BoldFont={* Medium}]{BentonSans}
-#+LATEX_HEADER: \setmonofont[Scale=0.80]{Monaco}
+#+LATEX_CLASS_OPTIONS: [11pt,letterpaper]
+#+LATEX_HEADER: \usepackage[protrusion=true,expansion=true]{microtype}
+#+LATEX_HEADER: \usepackage[T1]{fontenc}
 #+LATEX_HEADER: \usepackage[margin=1.2in]{geometry}
 #+LATEX_HEADER: \setlength{\parskip}{2ex}
 #+LATEX_HEADER: \setlength{\parindent}{0mm}
