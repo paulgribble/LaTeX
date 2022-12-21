@@ -7,6 +7,8 @@
 #+LATEX_HEADER: \usepackage[margin=1.2in]{geometry}
 #+LATEX_HEADER: \setlength{\parskip}{2ex}
 #+LATEX_HEADER: \setlength{\parindent}{0mm}
+#+LATEX_HEADER: \usepackage{enumitem}
+#+LATEX_HEADER: \setlist{noitemsep}
 #+LATEX_HEADER: \usepackage[compact]{titlesec}
 #+LATEX_HEADER: \titlespacing{\section}{0pt}{1ex}{0ex}
 #+LATEX_HEADER: \titleformat*{\section}{\normalsize\bfseries}
