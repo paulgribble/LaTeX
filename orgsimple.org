@@ -1,0 +1,10 @@
+#+STARTUP: showall
+#+SETUPFILE: ~/github/LaTeX/simple.org
+#+TITLE: A Simple Document
+#+AUTHOR: Paul Gribble
+#+DATE: \today
+
+* Introduction
+
+This is a simple document.
+
