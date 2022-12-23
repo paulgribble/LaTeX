@@ -31,7 +31,7 @@
 \setmainfont
     [Ligatures=TeX,
       BoldFont={* Bold}]
-    {Adobe Garamond Pro}\linespread{1.05}
+    {Minion Pro}\linespread{1.05}
 
 \setsansfont
     [Ligatures=TeX,
