@@ -1,0 +1,15 @@
+#+STARTUP: showall
+#+OPTIONS: toc:nil ':t
+#+LATEX_CLASS: Psychology_letter
+
+\thedate{\today}
+
+\recipient{Ford Prefect}
+
+\regarding{something important}
+
+\greeting{Dear Colleague,}
+
+Now is the winter of our discontent.
+
+\closingnosig{Sincerely,}
