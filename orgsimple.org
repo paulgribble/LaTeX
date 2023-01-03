@@ -1,0 +1,13 @@
+#+STARTUP: showall
+#+TITLE: A Simple Document
+#+AUTHOR: Ford Prefect
+#+DATE: \today
+#+SETUPFILE: ~/github/LaTeX/simple.org
+
+* Introduction
+
+Hello.
+
+** A Subsection
+
+This is a test.
