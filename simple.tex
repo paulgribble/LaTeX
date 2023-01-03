@@ -1,0 +1,36 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX,BoldFont={* Bold}]{Minion Pro}\linespread{1.05}
+\setsansfont[Ligatures=TeX,UprightFont={* Regular},BoldFont={* Medium},Scale=0.83]{BentonSans}
+\setmonofont[Scale=0.80]{Monaco}
+\usepackage[margin=1.2in]{geometry}
+\setlength{\parskip}{2ex}
+\setlength{\parindent}{0mm}
+\usepackage{enumitem}
+\setlist{noitemsep}
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{1ex}{0ex}
+\titleformat*{\section}{\normalsize\bfseries}
+\titlespacing{\subsection}{0pt}{0ex}{0ex}
+\titleformat*{\subsection}{\normalsize}
+\makeatletter \renewcommand{\maketitle}{\begin{flushleft} {\Large\textbf{\@title}}\\\vspace{.5em}{\normalsize\@author}\\{\small\@date}\end{flushleft}\vspace{1em}}
+\setcounter{secnumdepth}{2}
+
+\author{Paul Gribble}
+\date{\today}
+\title{A Simple Document}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+This is a simple document.
+
+\end{document}
