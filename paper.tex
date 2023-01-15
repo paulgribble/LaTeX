@@ -1,0 +1,123 @@
+% A SHORT ARTICLE
+
+\documentclass[letterpaper,titlepage,11pt]{article}
+
+% ---------- FONT ----------
+%
+
+\usepackage[urw-garamond]{mathdesign} % Garamond
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage[T1]{fontenc}
+
+%\usepackage{libertine}                      % Libertine
+
+% --------- MISC FORMATTING ---------
+%
+\usepackage{natbib}                  % for our chosen bibliography style
+\usepackage{graphicx}                % for importing graphics into figures
+\usepackage{float}                   % better control of figure placement
+\usepackage{amsmath}                 % better mathematical typesetting
+\usepackage{hyperref}                % for clickable URLs and email addresses
+\urlstyle{sf}                        % san-serif font for URLs
+\usepackage[margin=1.0in]{geometry}  % control page margins
+\usepackage[labelfont=bf]{caption}   % make caption labels boldface
+\usepackage[bottom]{footmisc}        % footnotes at bottom of page
+\setlength{\skip\footins}{10mm}      % obsessing about footnote spacing
+\setlength{\parskip}{1ex}            % space between paragraphs
+\usepackage{mathtools}               % mathtools and amsmath
+
+% ------- CUSTOM TITLE FORMAT -------
+%
+\makeatletter
+\renewcommand{\maketitle}{
+\begin{flushleft}          % right align
+{\LARGE\@title}            % increase the font size of the title
+\vspace{20pt}\\            % vertical space between the title and author name
+{\large\@author}           % author name
+\\\@date                   % date
+\vspace{20pt}              % vertical space between the author block and abstract
+\end{flushleft}
+}
+% -----------------------------------
+
+\usepackage{lipsum} % for generating dummy text; not needed for your actual ms
+
+%--------------------------------------------
+%	TITLE & AUTHORS & AFFILIATIONS
+%--------------------------------------------
+
+\title{A Report About Some Crazy Stuff}
+
+\author{Paul L. Gribble\\Western University, Canada\\{\small \url{pgribble@uwo.ca}}}
+
+\date{\today}
+
+%--------------------------------------------
+%	BEGIN THE DOCUMENT
+%--------------------------------------------
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\section{Introduction}
+
+Hello, I must be going. Blah blah blah lots of crazy research has been done on this topic \citep{Mattar:2005}. \lipsum[1]
+
+\lipsum[1]
+
+Also see Equation~\ref{eq:line} for some crazy stuff.
+
+\begin{equation}
+\hat{Y_{i}} = \beta_{0} + \beta_{1} X_{i} + \epsilon_{i}
+\label{eq:line}
+\end{equation}
+
+\lipsum[1]
+
+\subsection{More Junk}
+
+\lipsum[1-3]
+
+\section{Some Other Section}
+
+Also see Figure~\ref{fig:setupfig} for some other junk.
+
+\begin{figure}[H]
+	\centering
+    \includegraphics[height=3in]{figure1.pdf}
+ \caption{Blah blah blah the robot setup blah.}
+ \label{fig:setupfig}
+\end{figure}
+
+\lipsum[1-4]
+
+\subsection{More Stuff}
+
+Table~\ref{tbl:somedata} is totally meaningless.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{c|c}
+		condition &mean\\
+		\hline\hline
+		A         &10.1\\
+		B         &11.0\\
+	\end{tabular}
+ \caption{Blah blah some data.}
+ \label{tbl:somedata}
+\end{table}
+
+\lipsum[1-2]
+
+\section{Conclusions}
+
+\lipsum[1-2]
+
+\bibliographystyle{unsrt} 
+\bibliography{refs}
+
+
+\end{document}
+
