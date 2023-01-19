@@ -40,7 +40,7 @@
       Scale=0.83]
     {BentonSans}
 
-\setmonofont[Scale=0.80]{Monaco}
+\setmonofont[Scale=0.72]{Monaco}
 
 
 
