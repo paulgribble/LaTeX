@@ -39,7 +39,7 @@
       UprightFont={* Regular},
       BoldFont={* Medium},
       Numbers={Tabular,Lining},
-      Scale=0.83]
+      Scale=0.95]
     {BentonSans}
 
 \setmonofont[Scale=0.80]{Monaco}
