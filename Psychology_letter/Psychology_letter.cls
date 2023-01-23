@@ -148,6 +148,8 @@
 	Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
 %	Western University Canada\\
+%        Senior Scientist\\
+%        Haskins Laboratories, USA\\
 	{pgribble@uwo.ca $\bigcdot$ www.gribblelab.org}
 }
 
