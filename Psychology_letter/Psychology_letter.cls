@@ -30,19 +30,19 @@
 \RequirePackage{fontspec}
 \setmainfont
     [Ligatures=TeX,
-      BoldFont={* Bold}]
-    {Minion Pro}\linespread{1.05}
+    BoldFont={* Bold},
+    Numbers={Proportional,OldStyle}]
+    {Lyon Text}\linespread{1.07}
 
 \setsansfont
     [Ligatures=TeX,
       UprightFont={* Regular},
       BoldFont={* Medium},
+      Numbers={Tabular,Lining},
       Scale=0.83]
     {BentonSans}
 
-\setmonofont[Scale=0.72]{Monaco}
-
-
+\setmonofont[Scale=0.80]{Monaco}
 
 \RequirePackage{graphicx}
 \RequirePackage{ifthen}
