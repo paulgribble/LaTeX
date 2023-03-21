@@ -31,7 +31,7 @@
 \setmainfont
     [Ligatures=TeX,
     BoldFont={* Bold},
-    Numbers={Proportional,OldStyle}]
+    Numbers={Proportional,Lining}]
     {Lyon Text}\linespread{1.07}
 
 \setsansfont
