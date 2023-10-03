@@ -153,6 +153,22 @@
 	{pgribble@uwo.ca $\bigcdot$ www.gribblelab.org}
 }
 
+\newcommand{\closingshortsig}[1]{
+	\vspace{2.0ex}
+	\noindent
+	#1
+	\vspace{2.0ex}
+
+	\noindent
+	\includegraphics[height=15mm]{signature.jpg}\vspace{0.0ex}\\
+	\vspace{1.0ex}
+
+	\noindent
+	Paul L. Gribble, Ph.D.\\
+	Professor
+}
+
+
 \newcommand{\closingnosig}[1]{
 	\vspace{2.0ex}
 	\noindent
