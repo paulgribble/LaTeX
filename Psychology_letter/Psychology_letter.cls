@@ -110,13 +110,13 @@
 \newcommand{\thedate}[1]{
         \noindent
         #1
-	\vspace{1.0ex}
+	\vspace{2.0ex}
 }
 
 \newcommand{\recipient}[1]{
 	\noindent
 	#1
-	\vspace{6.0ex}
+	\vspace{8.0ex}
 }
 
 \newcommand{\regarding}[1]{
