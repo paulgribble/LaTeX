@@ -10,7 +10,7 @@
 ;;(scroll-bar-mode -1)
 (tool-bar-mode   -1)
 (add-to-list 'default-frame-alist '(height . 48))
-(add-to-list 'default-frame-alist '(width . 100))
+(add-to-list 'default-frame-alist '(width . 80))
 
 ;; inhibit startup screen
 (setq inhibit-splash-screen t)
