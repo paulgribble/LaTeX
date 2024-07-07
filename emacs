@@ -1,3 +1,7 @@
+(when (display-graphic-p)
+   (tool-bar-mode -1)
+   (scroll-bar-mode -1))
+
 ;; melpa
 (add-to-list 'package-archives
 	     '("melpa-stable" . "https://stable.melpa.org/packages/") t)
@@ -57,7 +61,7 @@
  '(custom-safe-themes
    '("f366d4bc6d14dcac2963d45df51956b2409a15b770ec2f6d730e73ce0ca5c8a7" "de8f2d8b64627535871495d6fe65b7d0070c4a1eb51550ce258cd240ff9394b0" default))
  '(package-selected-packages
-   '(org-journal-tags ox-twbs org-journal zenburn-theme zerodark-theme writeroom-mode auctex use-package)))
+   '(zenburn-theme zerodark-theme writeroom-mode auctex use-package)))
 
 ;; date
 (defun date ()
@@ -83,33 +87,33 @@
 
 
 ;; org-journal
-(require 'org-journal)
-(setq org-journal-dir "~/Dropbox/Documents/org/journal/")
-(setq org-journal-file-format "%Y%m%d.org")
-(setq org-journal-date-format "%A %Y/%m/%d")
-(global-set-key (kbd "C-c C-j") #'org-journal-new-entry)
-(global-set-key (kbd "C-c C-o") #'org-journal-open-current-journal-file)
+;;(require 'org-journal)
+;;(setq org-journal-dir "~/Dropbox/Documents/org/journal/")
+;;(setq org-journal-file-format "%Y%m%d.org")
+;;(setq org-journal-date-format "%A %Y/%m/%d")
+;;(global-set-key (kbd "C-c C-j") #'org-journal-new-entry)
+;;(global-set-key (kbd "C-c C-o") #'org-journal-open-current-journal-file)
 
 ;; org-agenda
-(use-package org-agenda)
-(setq org-agenda-files (list "~/Dropbox/Documents/org/journal"
-			     "~/Dropbox/Documents/org"))
-(global-set-key (kbd "C-c l") #'org-store-link)
-(global-set-key (kbd "C-c a") #'org-agenda)
-(global-set-key (kbd "C-c c") #'org-capture)
+;;(use-package org-agenda)
+;;(setq org-agenda-files (list "~/Dropbox/Documents/org/journal"
+;;			     "~/Dropbox/Documents/org"))
+;;(global-set-key (kbd "C-c l") #'org-store-link)
+;;(global-set-key (kbd "C-c a") #'org-agenda)
+;;(global-set-key (kbd "C-c c") #'org-capture)
 
 ;; on startup
-(org-agenda nil "n")
-(org-journal-new-entry 1)
+;;(org-agenda nil "n")
+;;(org-journal-new-entry 1)
 
 ;; def startup sequence
-(defun startup ()
-  "startup sequence"
-  (interactive)
-  (org-agenda nil "n")
-  (org-journal-new-entry nil)
-  )
-(global-set-key (kbd "C-c C-.") #'startup)
+;;(defun startup ()
+;;  "startup sequence"
+;;  (interactive)
+;;  (org-agenda nil "n")
+;;  (org-journal-new-entry nil)
+;;  )
+;;(global-set-key (kbd "C-c C-.") #'startup)
 
 
 
