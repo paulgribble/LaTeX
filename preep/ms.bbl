@@ -1,0 +1,17 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Codol  \bgroup et al.\egroup
+  }{2024}]{Codol_2023}
+Codol O, Michaels JA, Kashefi M, Pruszynski JA, Gribble PL (2024)
+\newblock {MotorNet}: a python toolbox for controlling differentiable
+  biomechanical effectors with artificial neural networks.
+\newblock {\em eLife}~.
+
+\bibitem[\protect\citeauthoryear{Kistemaker \bgroup et al.\egroup
+  }{2010}]{Kistemaker2010-de}
+Kistemaker DA, Wong JD, Gribble PL (2010)
+\newblock The central nervous system does not minimize energy cost in arm
+  movements.
+\newblock {\em J. Neurophysiol.}~104:\mbox{2985--2994}.
+
+\end{thebibliography}
