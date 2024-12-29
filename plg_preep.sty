@@ -1,0 +1,85 @@
+\ProvidesPackage{plg_ms}
+
+% FONT STUFF
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage[babel]{microtype}
+\usepackage{newtx}
+
+% LINKS
+\usepackage[hidelinks]{hyperref}
+
+% MARGINS & SPACING
+\usepackage[left=0.75in,
+            right=0.75in,
+            top=.775in,
+            bottom=.6in,
+            includefoot,
+            includehead,
+            headsep=0.15in,
+            headheight=12.74524pt]{geometry}
+\usepackage{setspace}
+%\setstretch{1.05}
+\usepackage[bottom]{footmisc}
+\setlength{\skip\footins}{10mm}
+\usepackage[compact]{titlesec}
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsubsection}{\normalsize\bfseries}
+\titlespacing*{\section}{0pt}{2ex}{1ex}
+\titlespacing*{\subsection}{0pt}{1ex}{1ex}
+\titlespacing*{\subsubsection}{0pt}{1ex}{1ex}
+
+% BIBLIOGRAPHY
+\usepackage{natbib}
+\bibliographystyle{jneurophysiol}
+\setlength{\bibsep}{0pt plus 0.3ex}
+\def\bibfont{\small}
+
+% FIGURES/GRAPHICS
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[labelfont={bf},font={small},labelsep=period]{caption}
+
+% SHORT TITLE
+\newcommand\@shorttitle{}
+\newcommand\shorttitle[1]{\renewcommand\@shorttitle{#1}}
+
+% HEADERS & FOOTERS
+\usepackage[twoside]{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[C]{\hrule\vspace{1mm}\footnotesize\MakeUppercase\@shorttitle}
+\fancyhead[OL]{\footnotesize\thepage}
+\fancyhead[OR]{}
+\fancyhead[EL]{}
+\fancyhead[ER]{\footnotesize\thepage}
+\fancyfoot[C]{\footnotesize\itshape\@date}
+\renewcommand{\headrulewidth}{0.0pt}
+
+% AUTHORS & AFFILIATIONS
+\usepackage{authblk}
+\renewcommand*{\Affilfont}{\footnotesize\normalfont}
+\renewcommand*{\Authfont}{\bfseries}
+\usepackage{orcidlink}
+
+% CUSTOM TITLE FORMAT
+\makeatletter
+\renewcommand{\maketitle}{
+\twocolumn[
+\begin{flushleft}
+{\LARGE\@title\par}
+\vspace{8mm}
+{\@author\par}
+\vspace{5mm}
+\end{flushleft}
+]
+}
+\makeatother
+
+% CUSTOM ABSTRACT FORMAT
+\renewenvironment{abstract}
+ {\par\noindent\textbf{\bfseries\abstractname}\small---\ignorespaces}
+ {}
