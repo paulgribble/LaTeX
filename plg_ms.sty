@@ -1,0 +1,70 @@
+\ProvidesPackage{plg_ms}
+
+% FONT STUFF
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage[babel,final,nopatch=footnote]{microtype}
+\usepackage[scaled=0.92]{helvet}
+\linespread{1.04}
+\renewcommand\familydefault{\sfdefault}
+\usepackage{mathptmx}
+
+% LINKS
+\usepackage[hidelinks]{hyperref}
+
+% MARGINS & SPACING
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage{setspace}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+\usepackage[compact]{titlesec}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsubsection}{\normalsize\bfseries}
+
+% BIBLIOGRAPHY
+\usepackage{natbib}
+\bibliographystyle{jneurophysiol}
+\setlength{\bibsep}{1ex plus 0.5ex minus 0.2ex}
+\def\bibfont{\normalsize}
+
+% FIGURES/GRAPHICS
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[labelfont={bf},font={small},labelsep=period]{caption}
+
+% SHORT TITLE
+\newcommand\@shorttitle{}
+\newcommand\shorttitle[1]{\renewcommand\@shorttitle{#1}}
+
+% HEADERS & FOOTERS
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.0pt}
+
+% AUTHORS & AFFILIATIONS
+\usepackage{authblk}
+\renewcommand*{\Affilfont}{\footnotesize\normalfont}
+\renewcommand*{\Authfont}{\bfseries}
+\usepackage{orcidlink}
+
+% CUSTOM TITLE FORMAT
+\makeatletter
+\renewcommand{\maketitle}{
+\begin{flushleft}
+{\LARGE\@title\par}
+\vspace{4mm}
+{\@author\par}
+\vspace{4mm}
+\end{flushleft}
+}
+\makeatother
+
+% CUSTOM ABSTRACT FORMAT
+\renewenvironment{abstract}
+  {\par\noindent\textbf{\bfseries\abstractname}\small---\ignorespaces}
+  {\par}
