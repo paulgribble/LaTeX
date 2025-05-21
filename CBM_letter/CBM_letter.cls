@@ -115,7 +115,7 @@
 	\vspace{2.0ex}
 
 	\noindent
-	\includegraphics[height=15mm]{signature.jpg}\vspace{0.0ex}\\
+	\includegraphics[height=15mm]{signature.png}\vspace{0.0ex}\\
 	\vspace{1.0ex}
 
 	\noindent
