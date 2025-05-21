@@ -21,28 +21,32 @@
 %
 %\RequirePackage[scaled]{helvet}
 %\RequirePackage[garamond]{mathdesign}\linespread{1.05}
-%\RequirePackage{textcomp}
-%\RequirePackage{microtype}
-%\RequirePackage[T1]{fontenc}
+\RequirePackage{textcomp}
+\RequirePackage{microtype}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[english]{babel}
+\RequirePackage{newpx}
+\RequirePackage{newpxmath}
+\linespread{1.05}
 
 % fontspec
 %
-\RequirePackage{fontspec}
-\setmainfont
-    [Ligatures=TeX,
-    BoldFont={* Bold},
-    Numbers={Proportional,Lining}]
-    {Lyon Text}\linespread{1.07}
+% \RequirePackage{fontspec}
+% \setmainfont
+%     [Ligatures=TeX,
+%     BoldFont={* Bold},
+%     Numbers={Proportional,Lining}]
+%     {Lyon Text}\linespread{1.07}
 
-\setsansfont
-    [Ligatures=TeX,
-      UprightFont={* Regular},
-      BoldFont={* Medium},
-      Numbers={Tabular,Lining},
-      Scale=0.95]
-    {BentonSans}
+% \setsansfont
+%     [Ligatures=TeX,
+%       UprightFont={* Regular},
+%       BoldFont={* Medium},
+%       Numbers={Tabular,Lining},
+%       Scale=0.95]
+%     {BentonSans}
 
-\setmonofont[Scale=0.80]{Monaco}
+% \setmonofont[Scale=0.80]{Monaco}
 
 \RequirePackage{graphicx}
 \RequirePackage{ifthen}
