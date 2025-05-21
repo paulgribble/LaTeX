@@ -5,7 +5,7 @@
 %
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{CBM_letter}[2024/07/03 v0.01 Center for Brain and Mind letterhead]
-\LoadClass[12pt,letterpaper]{article}
+\LoadClass[11pt,letterpaper]{article}
 
 % page margins and paragraph spacing
 \RequirePackage[letterpaper, top=1.8in, left=1.125in, right=1.125in, bottom=1.5in, headsep=0.597in, headheight=46.1223pt, footskip=0.675in]{geometry}
@@ -15,11 +15,22 @@
 \RequirePackage{setspace}
 
 % FONTS
-%\RequirePackage{lmodern}
-\RequirePackage{fontspec}
+
+% base latex
 \RequirePackage{textcomp}
 \RequirePackage{microtype}
 \RequirePackage[T1]{fontenc}
+\RequirePackage[english]{babel}
+\RequirePackage{newpx}
+\RequirePackage{newpxmath}
+\linespread{1.05}
+
+
+%\RequirePackage{lmodern}
+% \RequirePackage{fontspec}
+% \RequirePackage{textcomp}
+% \RequirePackage{microtype}
+% \RequirePackage[T1]{fontenc}
 
 %\RequirePackage{mathpazo}\linespread{1.05} % Palatino
 %\RequirePackage{newtx} % Times
@@ -33,9 +44,9 @@
 %\setmainfont[BoldFont={* Bold}]{Adobe Caslon Pro}%\linespread{1.05}
 %\setmainfont[BoldFont={* Semibold},Numbers=Lining]{Lyon Text}
 %\setmainfont[BoldFont={* Bold}]{Equity Text A}
-\setmainfont[BoldFont={* Bold}]{Minion Pro}
-\setsansfont[BoldFont={BentonSans Bold}]{BentonSans}
-\setmonofont[Scale=0.80]{Monaco}
+% \setmainfont[BoldFont={* Bold}]{Minion Pro}
+% \setsansfont[BoldFont={BentonSans Bold}]{BentonSans}
+% \setmonofont[Scale=0.80]{Monaco}
 
 \RequirePackage{graphicx}
 \RequirePackage{ifthen}
@@ -110,7 +121,7 @@
 	\noindent
 	Paul L. Gribble, Ph.D.\\
 	Professor\\
-	Center for Brain and Mind\\
+	Centre for Brain and Mind\\
 	Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
 %	Western University Canada\\
@@ -126,7 +137,7 @@
 	\noindent
 	Paul L. Gribble, Ph.D.\\
 	Professor\\
-	Center for Brain and Mind\\
+	Centre for Brain and Mind\\
 	Dept. Psychology\\
 	Dept. Physiology \& Pharmacology\\
 %	Western University Canada\\
