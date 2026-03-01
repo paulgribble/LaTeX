@@ -5,7 +5,7 @@
 %
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{CBM_letter}[2024/07/03 v0.01 Center for Brain and Mind letterhead]
-\LoadClass[11pt,letterpaper]{article}
+\LoadClass[10pt,letterpaper]{article}
 
 % page margins and paragraph spacing
 \RequirePackage[letterpaper, top=1.8in, left=1.125in, right=1.125in, bottom=1.5in, headsep=0.597in, headheight=46.1223pt, footskip=0.675in]{geometry}
@@ -16,37 +16,14 @@
 
 % FONTS
 
-% base latex
 \RequirePackage{textcomp}
 \RequirePackage{microtype}
-\RequirePackage[T1]{fontenc}
+\RequirePackage{fontspec}
 \RequirePackage[english]{babel}
-\RequirePackage{newpx}
-\RequirePackage{newpxmath}
-\linespread{1.05}
-
-
-%\RequirePackage{lmodern}
-% \RequirePackage{fontspec}
-% \RequirePackage{textcomp}
-% \RequirePackage{microtype}
-% \RequirePackage[T1]{fontenc}
-
-%\RequirePackage{mathpazo}\linespread{1.05} % Palatino
-%\RequirePackage{newtx} % Times
-%\RequirePackage[scaled]{helvet}
-%\renewcommand\familydefault{\sfdefault}
-
-%\setmainfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}\linespread{1.0833}
-%\setmainfont[BoldFont={SF UI Display Bold}]{SF UI Display}\linespread{1.0833}
-%\setmainfont[BoldFont={* Bold}]{Equity Text B}\linespread{1.0833}
-%\setmainfont[BoldFont={* Bold}]{Palatino}\linespread{1.05}
-%\setmainfont[BoldFont={* Bold}]{Adobe Caslon Pro}%\linespread{1.05}
-%\setmainfont[BoldFont={* Semibold},Numbers=Lining]{Lyon Text}
-%\setmainfont[BoldFont={* Bold}]{Equity Text A}
-% \setmainfont[BoldFont={* Bold}]{Minion Pro}
-% \setsansfont[BoldFont={BentonSans Bold}]{BentonSans}
-% \setmonofont[Scale=0.80]{Monaco}
+\setmainfont{Helvetica Neue}
+\setsansfont{Helvetica Neue}
+\renewcommand{\familydefault}{\sfdefault}
+\linespread{1.0}
 
 \RequirePackage{graphicx}
 \RequirePackage{ifthen}
