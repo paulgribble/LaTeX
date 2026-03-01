@@ -5,7 +5,7 @@
 % 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{Psychology_letter}[2022/09/04 v0.01 Psychology letterhead]
-\LoadClass[11pt,letterpaper]{article}
+\LoadClass[10pt,letterpaper]{article}
 
 % page margins and paragraph spacing
 \RequirePackage[letterpaper, top=1.8in, left=1.125in, right=1.125in, bottom=1.5in, headsep=0.597in, headheight=49.93233pt, footskip=14.08003pt]{geometry}
@@ -17,36 +17,14 @@
 
 % FONTS
 
-% base latex
-%
-%\RequirePackage[scaled]{helvet}
-%\RequirePackage[garamond]{mathdesign}\linespread{1.05}
 \RequirePackage{textcomp}
 \RequirePackage{microtype}
-\RequirePackage[T1]{fontenc}
+\RequirePackage{fontspec}
 \RequirePackage[english]{babel}
-\RequirePackage{newpx}
-\RequirePackage{newpxmath}
-\linespread{1.05}
-
-% fontspec
-%
-% \RequirePackage{fontspec}
-% \setmainfont
-%     [Ligatures=TeX,
-%     BoldFont={* Bold},
-%     Numbers={Proportional,Lining}]
-%     {Lyon Text}\linespread{1.07}
-
-% \setsansfont
-%     [Ligatures=TeX,
-%       UprightFont={* Regular},
-%       BoldFont={* Medium},
-%       Numbers={Tabular,Lining},
-%       Scale=0.95]
-%     {BentonSans}
-
-% \setmonofont[Scale=0.80]{Monaco}
+\setmainfont{Helvetica Neue}
+\setsansfont{Helvetica Neue}
+\renewcommand{\familydefault}{\sfdefault}
+\linespread{1.0}
 
 \RequirePackage{graphicx}
 \RequirePackage{ifthen}
