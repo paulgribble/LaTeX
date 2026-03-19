@@ -14,6 +14,11 @@
 
 \RequirePackage{setspace}
 
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{1ex}{0ex}
+\titleformat*{\section}{\normalsize\bfseries}
+\titlespacing{\subsection}{0pt}{0ex}{0ex}
+\titleformat*{\subsection}{\normalsize}
 
 % FONTS
 
