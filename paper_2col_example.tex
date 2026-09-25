@@ -1,0 +1,250 @@
+% Example of a two-column article with a compact preamble.
+% All content is placeholder: lipsum text, mwe example images, and a
+% dummy bibliography that is written out at compile time (filecontents).
+%
+% Build:  latexmk -pdf paper_2col_example.tex
+
+\documentclass[10pt,twocolumn]{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage[compact]{titlesec}
+\setcounter{secnumdepth}{0} % no section numbering
+
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{tabularx,booktabs}
+
+\usepackage[numbers,sort&compress]{natbib}
+\bibliographystyle{IEEEtranN}
+
+\usepackage[hidelinks]{hyperref}
+
+% Float tuning: let large floats sit at the top of a text page instead of
+% being pushed onto float-only pages
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\dbltopfraction}{0.9}
+\renewcommand{\textfraction}{0.07}
+\renewcommand{\floatpagefraction}{0.85}
+\renewcommand{\dblfloatpagefraction}{0.85}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\usepackage{lipsum} % placeholder text
+
+% Dummy bibliography, written next to this file when compiled.
+\begin{filecontents*}[overwrite]{paper_2col_example.bib}
+@article{Author2020,
+  author  = {Author, First A. and Author, Second B.},
+  title   = {A placeholder article title},
+  journal = {Journal of Placeholder Studies},
+  year    = {2020},
+  volume  = {12},
+  pages   = {1--10}
+}
+@article{Author2021,
+  author  = {Author, Second B. and Author, Third C.},
+  title   = {Another placeholder article title},
+  journal = {Placeholder Letters},
+  year    = {2021},
+  volume  = {3},
+  pages   = {100--110}
+}
+@inproceedings{Author2022,
+  author    = {Author, Third C.},
+  title     = {A placeholder conference paper},
+  booktitle = {Proceedings of the Placeholder Conference},
+  year      = {2022},
+  pages     = {42--48}
+}
+@book{Author2019,
+  author    = {Author, First A.},
+  title     = {A Placeholder Book},
+  publisher = {Placeholder Press},
+  year      = {2019}
+}
+@misc{Author2023,
+  author       = {Author, Second B.},
+  title        = {A placeholder preprint},
+  year         = {2023},
+  howpublished = {arXiv:0000.00000}
+}
+\end{filecontents*}
+
+\title{A Placeholder Title for an Example Two-Column Article}
+\author{
+First A.\ Author\thanks{Institution One} \and
+Second B.\ Author\thanks{Institution Two} \and
+Third C.\ Author\thanks{Institution Three}}
+\date{\today}  % leave empty to suppress date, or put a date in
+
+\begin{document}
+
+\twocolumn[
+\maketitle
+\begin{quotation}\noindent\small
+{\lipsum[1]} % braces needed: a bare ] would end the \twocolumn[...] argument
+\end{quotation}
+\vspace{1.5em}
+]
+% \thanks footnotes are lost inside \twocolumn[...], so re-issue them here
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\footnotetext[1]{Institution One}
+\footnotetext[2]{Institution Two}
+\footnotetext[3]{Institution Three}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\setcounter{footnote}{0}
+
+
+\lipsum[2][1-4] Prior work has addressed this in several ways
+\cite{Author2020,Author2021,Author2022}. \lipsum[2][5-8]
+
+\lipsum[3]
+
+\lipsum[4][1-3] We call this the \textbf{placeholder effect} (PE), following
+earlier use of the term \cite{Author2019, Author2023}. \lipsum[4][4-9]
+
+\lipsum[5]
+
+\section{First section, with a single-column figure}\label{first-section}
+
+\lipsum[6][1-5] This is illustrated in Figure \ref{fig:one}a. \lipsum[6][6-8]
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.9\columnwidth]{example-image-a}
+  \caption{
+  Single-column figure placeholder.
+  \textbf{A}. \lipsum[7][1-2]
+  \textbf{B}. \lipsum[7][3-4]
+  \textbf{C}. \lipsum[7][5-6]
+  }
+  \label{fig:one}
+\end{figure}
+
+\lipsum[8][1-3] In our tests at the time of writing\footnote{This is an
+  example of a footnote in the body text.} we observed the effect
+consistently (Figure \ref{fig:one}b). \lipsum[8][4-8]
+
+\lipsum[9][1-4] If a task contains $n$ subtasks and the probability of
+success for each subtask is $p$, the probability of success for the
+overall task is $p^n$. \lipsum[9][5-7]
+
+\lipsum[10]
+
+\section{Second section, with a two-column table and figure}\label{second-section}
+
+\lipsum[11]
+
+\lipsum[12][1-4] Table \ref{tab:tiers} summarises the categories used
+throughout. \lipsum[12][5-8]
+
+\begin{table*}[htbp]
+  \centering
+  \begin{tabularx}{\linewidth}{l >{\raggedright\arraybackslash}p{2.5cm} >{\raggedright\arraybackslash}X}
+    \toprule
+    Tier & Level & Examples \\
+    \midrule
+    L1 & High &
+      \lipsum*[13][1-2] \\
+    L2 & Partial &
+      \lipsum*[14][1-3] \\
+    L3 & Low &
+      \lipsum*[15][1-2] \\
+    \bottomrule
+  \end{tabularx}
+  \caption{Placeholder table caption, adapted from \cite{Author2021}.
+    \lipsum*[16][1-2]}
+  \label{tab:tiers}
+\end{table*}
+
+\lipsum[17]
+
+\lipsum[18]
+
+\begin{figure*}[tb] % no p: keep tall wide figures off float-only pages
+  \centering
+  \includegraphics[width=\textwidth]{example-image-16x9}
+  \caption{Two-column figure placeholder. \lipsum*[19][1-3]}
+  \label{fig:two}
+\end{figure*}
+
+\section{Third section}\label{third-section}
+
+\lipsum[20][1-6] See Figure \ref{fig:two}. \lipsum[20][7-9]
+
+\lipsum[21]
+
+\lipsum[22]
+
+\begin{figure*}[tb] % no p: keep tall wide figures off float-only pages
+  \centering
+  \includegraphics[width=\textwidth]{example-image-golden}
+  \caption{Another two-column figure placeholder
+  \cite{Author2020,Author2022}. \lipsum*[23][1-3]}
+  \label{fig:three}
+\end{figure*}
+
+\section{Fourth section}
+
+\lipsum[24][1-5] Two clear exceptions are shown in Figure
+\ref{fig:three} \cite{Author2023}. \lipsum[24][6-8]
+
+\lipsum[25]
+
+\section{Fifth section, with an itemised list}\label{fifth-section}
+
+\lipsum[26]
+
+\lipsum[27][1-3]
+
+\begin{itemize}
+\item
+  \emph{\textbf{First item}}: \lipsum[28][1-4] \cite{Author2019}.
+\item
+  \emph{\textbf{Second item}}: \lipsum[29][1-4] \cite{Author2020,Author2021}.
+\item
+  \emph{\textbf{Third item}}: \lipsum[30][1-3]
+\item
+  \emph{\textbf{Fourth item}}: \lipsum[31][1-4] \cite{Author2022}.
+\item
+  \emph{\textbf{Fifth item}}: \lipsum[32][1-3]
+\item
+  \emph{\textbf{Sixth item}}: \lipsum[33][1-4] \cite{Author2023}.
+\end{itemize}
+
+\lipsum[34]
+
+\lipsum[35][1-5] Prior experience suggests that \textasciitilde500 hours
+of well-labelled data is a useful intermediate milestone
+\cite{Author2021}. \lipsum[35][6-8]
+
+\lipsum[36]
+
+\section{Discussion}\label{discussion}
+
+\lipsum[37]
+
+\lipsum[38][1-4] We adopt the term deliberately to connect with earlier
+work \cite{Author2019,Author2020,Author2023}. \lipsum[38][5-8]
+
+\lipsum[39]
+
+\section{Methods}\label{methods}
+
+\textbf{First procedure.} \lipsum[40][1-5]
+
+\textbf{Second procedure.} \lipsum[41][1-3] Each curve is a
+two-parameter Weibull survival function $S(t) = 0.8^{(t/t_{80})^k}$,
+plotted against $\log_{10}(t/t_{80})$, with $k \approx 0.68$ estimated
+via $k = \ln(0.322)/\ln(0.19)$. Data were downloaded from
+\href{https://example.org/}{example.org}. \lipsum[41][4-5]
+
+\textbf{Third procedure.} \lipsum[42][1-5] \cite{Author2022}
+
+\textbf{Fourth procedure.} \lipsum[43][1-5]
+
+\bibliography{paper_2col_example}
+
+\end{document}
